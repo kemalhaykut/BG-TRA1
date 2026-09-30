@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Първи стъпки · İlk Adımlar — A1 Bulgarca Hikâye Kitabı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,800;1,500&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#453a2b;--paper:#f6efdd;--edge:#d9cca9;--ink:#372c1e;--ink2:#7d6d51;--acc:#a8432a;--green:#41603f;--gold:#b98a2f}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Literata',Georgia,serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;min-height:100vh}
+body::after{content:'';position:fixed;inset:0;z-index:60;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+button{font-family:inherit;touch-action:manipulation}
+#top{display:flex;justify-content:space-between;align-items:center;padding:16px 36px;border-bottom:1px solid rgba(246,239,221,.22);gap:20px;flex-wrap:wrap}
+.brand{color:#efe6cf;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.brand b{font-family:'Playfair Display',serif;font-weight:600;font-size:19px;letter-spacing:.14em}
+.brand span{font-size:12.5px;opacity:.75;letter-spacing:.05em;font-style:italic}
+#top nav{display:flex;gap:4px;flex-wrap:wrap}
+#top nav button{background:none;border:none;color:#efe6cf;opacity:.72;font-size:13px;letter-spacing:.06em;padding:8px 14px;cursor:pointer;border-bottom:2px solid transparent;transition:.15s}
+#top nav button:hover{opacity:1}
+#top nav button.on{opacity:1;border-bottom-color:#d0744f}
+#view{padding:34px 36px 70px}
+.lib{display:grid;grid-template-columns:400px 1fr;gap:58px;max-width:1250px;margin:0 auto;align-items:start}
+.cover{background:#2e4034;border-radius:6px 14px 14px 6px;padding:52px 46px;color:#f2ead2;min-height:680px;box-shadow:0 26px 55px rgba(0,0,0,.5),inset 7px 0 0 rgba(0,0,0,.28),inset -1px 0 0 rgba(255,255,255,.06);display:flex;flex-direction:column;align-items:center;text-align:center}
+.cover .kick{font-size:10.5px;letter-spacing:.34em;opacity:.75;margin-bottom:30px}
+.cover h1{font-family:'Playfair Display',serif;font-weight:800;font-size:44px;line-height:1.12;letter-spacing:.04em}
+.cover .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:17px;opacity:.85;margin-top:10px;letter-spacing:.22em}
+.rule{display:flex;align-items:center;gap:12px;width:100%;margin:30px 0}
+.rule::before,.rule::after{content:'';flex:1;border-top:1px solid rgba(242,234,210,.35)}
+.rule i{width:7px;height:7px;background:#d0744f;transform:rotate(45deg)}
+.cover svg{width:170px;margin:6px 0 26px}
+.cover p{font-size:13px;line-height:1.9;opacity:.85;max-width:270px}
+.cover .foot{margin-top:auto;font-size:10.5px;letter-spacing:.26em;opacity:.6;padding-top:30px}
+.sheet{background:var(--paper);box-shadow:0 26px 55px rgba(0,0,0,.45);border-radius:3px 10px 10px 3px;position:relative}
+.sheet::before{content:'';position:absolute;inset:13px;border:1px solid var(--edge);border-radius:2px 7px 7px 2px;pointer-events:none}
+.toc{padding:46px 54px 40px}
+.toc h2{font-family:'Playfair Display',serif;font-size:30px;font-weight:600}
+.toc .htr{font-style:italic;color:var(--ink2);font-size:14px;margin:4px 0 10px}
+.lede{font-size:13.5px;line-height:1.8;color:var(--ink2);max-width:560px;margin-bottom:22px}
+.toc-row{display:grid;grid-template-columns:62px 1fr auto;gap:20px;padding:24px 6px;border-top:1px solid var(--edge);cursor:pointer;transition:.18s;align-items:start}
+.toc-row:hover{background:rgba(168,67,42,.05)}
+.toc-row .num{font-family:'Playfair Display',serif;font-size:28px;color:var(--ink2);line-height:1;padding-top:4px;transition:.18s}
+.toc-row:hover .num{color:var(--acc)}
+.toc-row h3{font-family:'Playfair Display',serif;font-size:23px;font-weight:600}
+.toc-row .ttr{font-style:italic;color:var(--ink2);font-size:13.5px;margin:2px 0 8px}
+.toc-row .desc{font-size:13px;color:var(--ink2);line-height:1.7}
+.toc-row .tags{font-size:10.5px;letter-spacing:.16em;color:var(--acc);margin-top:9px;text-transform:uppercase}
+.toc-side{text-align:right;padding-top:8px}
+.dots{display:flex;gap:5px;justify-content:flex-end}
+.dots i{width:7px;height:7px;border:1px solid var(--ink2);border-radius:50%}
+.dots i.on{background:var(--acc);border-color:var(--acc)}
+.toc-side small{display:block;color:var(--ink2);font-size:11px;margin-top:7px;letter-spacing:.06em}
+.toc-note{border-top:1px solid var(--edge);margin-top:4px;padding-top:18px;font-size:12px;color:var(--ink2);font-style:italic;line-height:1.8}
+.story-top{max-width:1160px;margin:0 auto 16px;display:flex;justify-content:space-between;align-items:center;color:#efe6cf;gap:12px;flex-wrap:wrap}
+.story-top .back{background:none;border:1px solid rgba(239,230,207,.35);color:#efe6cf;font-size:12.5px;letter-spacing:.08em;padding:9px 18px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:9px;transition:.15s}
+.story-top .back:hover{background:rgba(239,230,207,.1)}
+.tr-sw{background:none;border:none;color:#efe6cf;opacity:.75;font-size:12.5px;letter-spacing:.08em;cursor:pointer;display:flex;align-items:center;gap:9px;padding:9px 4px}
+.tr-sw:hover{opacity:1}.tr-sw.on{opacity:1;color:#f0c987}
+.book{max-width:1160px;margin:0 auto;display:flex;perspective:1900px;filter:drop-shadow(0 34px 44px rgba(0,0,0,.5))}
+.page{background:var(--paper);width:580px;min-height:672px;position:relative}
+.page.pl{border-radius:9px 2px 2px 9px}
+.page.pr{border-radius:2px 9px 9px 2px;border-left:1px solid rgba(0,0,0,.18)}
+.pf{position:absolute;inset:14px;border:1px solid var(--edge);border-radius:4px;pointer-events:none}
+.p-illo{position:absolute;inset:52px 44px 44px;display:flex;flex-direction:column}
+.illo-box{border:1px solid var(--edge);background:#fbf6e9;padding:10px;flex:1;display:flex}
+.illo-box svg{width:100%;height:100%;display:block}
+.illo-cap{margin-top:14px;font-size:10.5px;letter-spacing:.28em;color:var(--ink2);text-align:center;text-transform:uppercase}
+.p-text{position:absolute;inset:46px 54px 40px;display:flex;flex-direction:column}
+.kick{font-size:10px;letter-spacing:.3em;color:var(--acc);text-transform:uppercase}
+.s-title{font-family:'Playfair Display',serif;font-size:33px;font-weight:600;margin-top:10px}
+.s-sub{font-style:italic;color:var(--ink2);font-size:14px;margin-top:3px}
+.lines{flex:1;overflow:auto;padding-top:20px;margin-top:14px;border-top:1px solid var(--edge)}
+.line{font-size:18.5px;line-height:1.6;margin-bottom:14px;position:relative;padding-right:34px}
+.line:first-child{margin-top:2px}
+.w{background:none;border:none;font:inherit;color:inherit;padding:0;cursor:pointer;border-radius:3px;transition:background .14s,color .14s}
+.w:hover{color:var(--acc);background:rgba(168,67,42,.08);text-decoration:underline dotted rgba(168,67,42,.55);text-underline-offset:4px}
+.w.hit{background:rgba(65,96,63,.16);color:var(--green)}
+.line .tr{display:none;font-style:italic;color:var(--ink2);font-size:14px;margin-top:4px;line-height:1.5}
+.line.open .tr{display:block}
+body.trall .line .tr{display:block}
+body.trall .trb{display:none}
+.trb{position:absolute;right:2px;top:4px;width:23px;height:23px;border:1px solid var(--edge);background:none;border-radius:50%;color:var(--ink2);cursor:pointer;opacity:0;transition:.15s;display:grid;place-items:center}
+.line:hover .trb{opacity:1}
+.trb:hover{color:var(--acc);border-color:var(--acc)}
+.fn-area{border-top:1px dashed var(--edge);margin-top:6px;padding-top:13px;min-height:66px;display:flex;gap:10px;flex-wrap:wrap;align-content:flex-start}
+.fn-label{font-size:10px;letter-spacing:.24em;color:var(--ink2);align-self:center;text-transform:uppercase}
+.fn{background:#fbf6e9;border:1px solid var(--edge);border-radius:3px;padding:6px 13px;font-size:15px;cursor:default;color:var(--ink)}
+.fn b{font-weight:500}
+.fn em{font-style:italic;color:var(--ink2);font-size:13px;margin-left:8px}
+.fn.new{border-color:var(--acc);box-shadow:0 0 0 1px rgba(168,67,42,.35)}
+.fn .add{font-size:10px;color:var(--green);letter-spacing:.08em;margin-left:9px}
+@keyframes leafOut{to{transform:rotateY(-96deg);opacity:.15}}
+@keyframes leafIn{from{transform:rotateY(96deg);opacity:.15}to{transform:none;opacity:1}}
+@keyframes fadeSlide{to{opacity:0;transform:translateX(-16px)}}
+@keyframes fadeIn{from{opacity:0;transform:translateX(-16px)}}
+.book.leaf-out .page.pr{transform-origin:left center;animation:leafOut .3s ease-in forwards}
+.book.leaf-out .page.pl{animation:fadeSlide .3s ease-in forwards}
+.book.leaf-in .page.pr{transform-origin:left center;animation:leafIn .36s ease-out}
+.book.leaf-in .page.pl{animation:fadeIn .36s ease-out}
+.book-nav{max-width:1160px;margin:20px auto 0;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.bn{background:var(--paper);color:var(--ink);border:none;font-size:12.5px;letter-spacing:.1em;padding:11px 24px;border-radius:3px;cursor:pointer;box-shadow:0 8px 16px rgba(0,0,0,.32);transition:.15s;display:flex;gap:9px;align-items:center}
+.bn:hover:not(:disabled){background:#fff8e6;transform:translateY(-1px)}
+.bn:disabled{opacity:.35;cursor:default}
+.bn.ghost{background:transparent;color:#efe6cf;border:1px solid rgba(239,230,207,.35);box-shadow:none}
+.bn.ghost:hover{background:rgba(239,230,207,.1)}
+.bn.solid{background:var(--green);color:#f6efdd}
+.bn.solid:hover:not(:disabled){background:#4c7050}
+.hint{max-width:1160px;margin:14px auto 0;text-align:center;font-size:11px;color:rgba(239,230,207,.55);letter-spacing:.1em}
+.end-pl{background:#2e4034;border-radius:9px 2px 2px 9px;color:#f2ead2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px}
+.end-pl h2{font-family:'Playfair Display',serif;font-size:56px;font-weight:800;letter-spacing:.1em}
+.end-pl .sub{font-style:italic;opacity:.8;margin-top:8px}
+.end-pl svg{width:120px;margin-top:34px;opacity:.9}
+.end-pr{padding:52px 56px 44px;display:flex;flex-direction:column}
+.end-pr h3{font-family:'Playfair Display',serif;font-size:26px;font-weight:600}
+.end-pr .stats{font-size:13px;color:var(--ink2);font-style:italic;margin:8px 0 18px}
+.focus-list{border-top:1px solid var(--edge);flex:1;overflow:auto;padding-top:8px}
+.f-row{display:flex;align-items:baseline;gap:12px;padding:8px 2px;border-bottom:1px dotted #cdbf9c}
+.f-row b{font-weight:500;font-size:17px;min-width:150px}
+.f-row .lead{flex:1;border-bottom:1px dotted #cdbf9c;transform:translateY(-4px)}
+.f-row span{font-style:italic;color:var(--ink2);font-size:14px}
+.end-btns{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.end-btns .bn{box-shadow:0 6px 14px rgba(0,0,0,.18)}
+.words{max-width:920px;margin:0 auto;padding:44px 58px 40px}
+.words h2{font-family:'Playfair Display',serif;font-size:29px;font-weight:600}
+.words .cnt{font-style:italic;color:var(--ink2);font-size:13.5px;margin-top:5px}
+.words .cnt b{color:var(--ink)}
+.w-tools{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:20px 0 10px;border-top:1px solid var(--edge);padding-top:20px}
+.search{border:none;border-bottom:1px solid var(--ink2);background:transparent;font:inherit;font-size:14px;padding:7px 2px;width:220px;outline:none;color:var(--ink)}
+.search:focus{border-bottom-color:var(--acc)}
+.chip{border:1px solid var(--edge);background:transparent;color:var(--ink2);font-size:11.5px;padding:6px 13px;border-radius:999px;cursor:pointer;letter-spacing:.05em;transition:.15s}
+.chip:hover{border-color:var(--ink2)}
+.chip.on{background:var(--green);border-color:var(--green);color:#f6efdd}
+.w-tools .bn{margin-left:auto}
+.w-list{max-height:520px;overflow:auto;padding:10px 4px 4px}
+.w-row{display:flex;align-items:baseline;gap:12px;padding:8px 2px;border-bottom:1px dotted #cdbf9c}
+.w-row .bg{font-size:18px;min-width:180px;font-weight:500}
+.w-row .lead{flex:1;border-bottom:1px dotted #cdbf9c;transform:translateY(-4px)}
+.w-row .trm{font-style:italic;color:var(--ink2);font-size:14px}
+.w-row .cat{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);border:1px solid currentColor;padding:2.5px 9px;border-radius:999px;opacity:.8;flex:none}
+.w-row .del{border:none;background:none;color:var(--ink2);font-size:17px;cursor:pointer;padding:0 6px;line-height:1;border-radius:3px;flex:none}
+.w-row .del:hover{color:var(--acc)}
+.empty{padding:36px 10px;text-align:center;color:var(--ink2);font-style:italic;line-height:1.9;font-size:14px}
+.q-wrap{max-width:660px;margin:0 auto}
+.q-card{padding:46px 60px 40px;text-align:center}
+.q-head{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.24em;color:var(--ink2);text-transform:uppercase}
+.q-word{font-family:'Playfair Display',serif;font-size:50px;font-weight:600;margin:34px 0 8px}
+.q-cue{font-style:italic;color:var(--ink2);font-size:13px;margin-bottom:26px}
+.q-opts{margin-top:10px;border-bottom:1px solid var(--edge)}
+.q-opt{display:flex;width:100%;text-align:left;gap:15px;align-items:center;background:none;border:none;border-top:1px solid var(--edge);font:inherit;font-size:16.5px;padding:14px 8px;cursor:pointer;color:var(--ink);transition:.14s}
+.q-opt:hover:not(:disabled){background:rgba(168,67,42,.05)}
+.q-opt:disabled{cursor:default}
+.q-key{font-family:'Playfair Display',serif;border:1px solid var(--ink2);width:27px;height:27px;border-radius:50%;display:inline-grid;place-items:center;font-size:13px;flex:none}
+.q-opt.ok{color:var(--green);font-weight:600}.q-opt.ok .q-key{background:var(--green);border-color:var(--green);color:#f6efdd}
+.q-opt.bad{color:var(--acc)}.q-opt.bad .q-key{background:var(--acc);border-color:var(--acc);color:#f6efdd}
+.q-next{margin-top:24px;min-height:44px}
+.q-score{font-family:'Playfair Display',serif;font-size:46px;margin:26px 0 6px}
+.q-score span{font-size:22px;color:var(--ink2)}
+.q-msg{font-style:italic;color:var(--ink2);margin-bottom:26px;line-height:1.9}
+@media (max-width:1150px){.lib{grid-template-columns:1fr}.book{flex-direction:column;max-width:660px}.page{width:100%;min-height:0}.p-illo{position:static;inset:auto;padding:40px 40px 30px}.illo-box{aspect-ratio:640/460}.p-text{position:static;inset:auto;padding:34px 40px 34px}.fn-area{min-height:52px}.words{padding:36px 30px}}
+@media (max-width:700px){#view{padding:18px 14px 60px}#top{padding:12px 16px}.brand b{font-size:16px}.brand span{display:none}.cover{min-height:0;padding:40px 26px}.cover h1{font-size:34px}.toc{padding:30px 24px}.toc-row{grid-template-columns:40px 1fr;gap:12px;padding:18px 4px}.toc-row .num{font-size:22px}.toc-row h3{font-size:19px}.toc-side{display:none}.p-illo{padding:24px 22px 18px}.p-text{padding:26px 22px}.s-title{font-size:26px}.line{font-size:16.5px;margin-bottom:16px;padding-right:40px}.trb{width:30px;height:30px;opacity:.55}.q-card{padding:30px 24px}.q-word{font-size:36px}.words{padding:28px 20px}.w-row .bg{min-width:120px;font-size:16px}.bn{padding:12px 20px}}
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="brand"><b>ПЪРВИ СТЪПКИ</b><span>İlk Adımlar · A1 Bulgarca Hikâye Kitabı</span></div>
+  <nav>
+    <button data-v="library">Съдържание · İçindekiler</button>
+    <button data-v="words">Речник · Kelime Defteri</button>
+    <button data-v="quiz">Тест · Alıştırma</button>
+  </nav>
+</header>
+<main id="view"></main>
+
+<script>
+const CATS={is:'isim',fi:'fiil','sı':'sıfat',sa:'sayı',ed:'edat',so:'soru',zm:'zamir',zr:'zarf','ün':'ünlem',ba:'bağlaç',kp:'kalıp','öz':'özel ad'};
+const D={
+"мария":["Maria","öz"],"е":["-dır / -dir (olmak)","fi"],"в":["-de / -da","ed"],"софия":["Sofya","öz"],"тя":["o (kadın)","zm"],"живее":["yaşar","fi"],"малък":["küçük","sı"],"апартамент":["daire","is"],"слънцето":["güneş","is"],"високо":["yüksek","sı"],"небето":["gökyüzü","is"],"часовникът":["saat","is"],"седем":["yedi","sa"],"се":["se- (fiil eki)","zm"],"събужда":["uyandırır / uyandırmak","fi"],"добро":["iyi","sı"],"утро":["sabah","is"],"добро утро":["Günaydın!","kp"],"казва":["der, söyler","fi"],"не":["değil / hayır","zr"],"уморена":["yorgun","sı"],"става":["kalkar","fi"],"от":["-den / -dan","ed"],"леглото":["yatak","is"],"отива":["gider","fi"],"банята":["banyo","is"],"студената":["soğuk","sı"],"вода":["su","is"],"добра":["iyi","sı"],"лицето":["yüz","is"],"след":["sonra / -den sonra","ed"],"това":["bu","zm"],"облича":["giyer","fi"],"синя":["mavi","sı"],"рокля":["elbise","is"],"огледалото":["ayna","is"],"голямо":["büyük","sı"],"чисто":["temiz","sı"],"гледа":["bakar","fi"],"усмихва":["gülümser (се усмихва)","fi"],"днес":["bugün","zr"],"понеделник":["pazartesi","is"],"мисли":["düşünür","fi"],"кухнята":["mutfak","is"],"иска":["ister","fi"],"закуска":["kahvaltı","is"],"на":["-de / -nin","ed"],"масата":["masa","is"],"има":["vardır","fi"],"хляб":["ekmek","is"],"сирене":["peynir","is"],"мед":["bal","is"],"прави":["yapar","fi"],"кафе":["kahve","is"],"кафето":["kahve","is"],"горещо":["sıcak","sı"],"яде":["yer","fi"],"две":["iki","sa"],"филийки":["dilim","is"],"със":["ile","ed"],"хубаво":["güzel","sı"],"осем":["sekiz","sa"],"часа":["saat","is"],"излиза":["dışarı çıkar","fi"],"излизат":["çıkarlar","fi"],"излизаме":["çıkarız","fi"],"дома":["ev","is"],"улицата":["sokak","is"],"тиха":["sessiz","sı"],"чака":["bekler","fi"],"автобуса":["otobüs","is"],"спирката":["durak","is"],"автобусът":["otobüs","is"],"червен":["kırmızı","sı"],"голям":["büyük","sı"],"големи":["büyük (çoğul)","sı"],"много":["çok","zr"],"хора":["insanlar","is"],"един":["bir","sa"],"мъж":["adam","is"],"пита":["sorar","fi"],"вие":["siz","zm"],"сте":["-siniz (olmak)","fi"],"да":["evet","ün"],"аз":["ben","zm"],"съм":["-yim (olmak)","fi"],"здравейте":["merhaba (saygılı)","ün"],"работи":["çalışır","fi"],"библиотека":["kütüphane","is"],"обича":["sever","fi"],"книгите":["kitaplar","is"],"книга":["kitap","is"],"книги":["kitap","is"],"библиотеката":["kütüphane","is"],"светла":["aydınlık","sı"],"нея":["onu (kadın)","zm"],"хиляди":["binlerce","sa"],"чете":["okur","fi"],"пише":["yazar","fi"],"цял":["bütün, tüm","sı"],"ден":["gün","is"],"ученик":["öğrenci","is"],"една":["bir (kadın/nötr)","sa"],"помага":["yardım eder","fi"],"него":["onu (erkek)","zm"],"радост":["sevinç","is"],"обед":["öğle (vakti)","is"],"малко":["küçük / biraz","sı"],"седи":["oturur","fi"],"маса":["masa","is"],"до":["yanında","ed"],"прозореца":["pencere","is"],"поръчва":["sipariş eder","fi"],"салата":["salata","is"],"приятелят":["arkadaş","is"],"приятеля":["arkadaş","is"],"ѝ":["onun (kadın, kısa)","zm"],"иван":["İvan","öz"],"идва":["gelir","fi"],"здравей":["merhaba (samimi)","ün"],"как":["nasıl","so"],"си":["-sin eki / kendi","zm"],"добре":["iyi","zr"],"благодаря":["teşekkür ederim","ün"],"отговаря":["cevap verir","fi"],"те":["onlar","zm"],"говорят":["konuşurlar","fi"],"живота":["hayat","is"],"вечерта":["akşam","is"],"у":["-de (konum)","ed"],"навън":["dışarı","zr"],"тъмно":["karanlık","sı"],"звездите":["yıldızlar","is"],"са":["-dirler (çoğul olmak)","fi"],"малки":["küçük","sı"],"вятърът":["rüzgâr","is"],"лек":["hafif","sı"],"хладен":["serin","sı"],"любимата":["sevdiği","sı"],"час":["saat (süre)","is"],"заспива":["uykuya dalar","fi"],"утре":["yarın","zr"],"отново":["yine, tekrar","zr"],"нов":["yeni","sı"],
+"никола":["Nikola","öz"],"момче":["erkek çocuk","is"],"той":["o (erkek)","zm"],"куче":["köpek","is"],"кучето":["köpek","is"],"кафяво":["kahverengi","sı"],"бяло":["beyaz","sı"],"името":["isim","is"],"барни":["Barney","öz"],"добър":["iyi","sı"],"приятел":["arkadaş","is"],"всяка":["her","sı"],"сутрин":["sabah","is"],"дава":["verir","fi"],"храна":["yemek, besin","is"],"маха":["sallar","fi"],"опашката":["kuyruk","is"],"го":["onu","zm"],"няма":["yok","fi"],"двора":["avlu, bahçe","is"],"къде":["nerede","so"],"наляво":["sola","zr"],"надясно":["sağa","zr"],"под":["altında","ed"],"дървото":["ağaç","is"],"зад":["arkasında","ed"],"къщата":["ev","is"],"майка":["anne","is"],"майката":["anne","is"],"му":["onun","zm"],"мамо":["anne! (hitap)","is"],"съседката":["komşu (kadın)","is"],"петрова":["Petrova","öz"],"стои":["durur","fi"],"портата":["bahçe kapısı","is"],"добър ден":["İyi günler!","kp"],"видяхте":["gördünüz","fi"],"ли":["mı / mi (soru eki)","so"],"ми":["benim / beni","zm"],"видях":["gördüm","fi"],"питайте":["sorun","fi"],"парка":["park","is"],"там":["orada","zr"],"ходят":["giderler","fi"],"с":["ile","ed"],"кучета":["köpekler","is"],"тича":["koşar","fi"],"децата":["çocuklar","is"],"играят":["oynarlar","fi"],"игрището":["oyun alanı","is"],"извинете":["affedersiniz","ün"],"тук":["burada","zr"],"момиче":["kız (çocuk)","is"],"бяга":["koşar","fi"],"към":["-e doğru","ed"],"реката":["nehir","is"],"бърза":["acele eder","fi"],"чува":["duyar","fi"],"лаене":["havlama","is"],"дърветата":["ağaçlar","is"],"едно":["bir (nötr)","sa"],"то":["o (nötr)","zm"],"черно":["siyah","sı"],"тъжен":["üzgün","sı"],"уморен":["yorgun","sı"],"сяда":["oturur","fi"],"тревата":["çimen","is"],"край":["kıyısında","ed"],"още":["daha","zr"],"гласът":["ses","is"],"моста":["köprü","is"],"вика":["bağırır / çağırır","fi"],"силно":["güçlü / şiddetle","zr"],"бързо":["hızlıca","zr"],"гали":["okşar","fi"],"ушите":["kulaklar","is"],"двамата":["ikisi","sa"],"връщат":["dönerler (се връщат)","fi"],"вратата":["kapı","is"],"ето":["işte","zr"],"усмивка":["gülümseme","is"],"пие":["içer","fi"],"спи":["uyur","fi"],"кошарата":["kulübe","is"],"кост":["kemik","is"],"хубав":["güzel","sı"],"пловдив":["Plovdiv","öz"],
+"събота":["cumartesi","is"],"съботата":["cumartesi","is"],"баба":["büyükanne, nine","is"],"станка":["Stanka","öz"],"рано":["erken","zr"],"нейната":["onun (kadın)","zm"],"внучка":["torun (kız)","is"],"внучката":["torun","is"],"елица":["Elitsa","öz"],"също":["de / da","zr"],"отиваме":["gideriz","fi"],"пазара":["çarşı, pazar","is"],"пазарът":["çarşı, pazar","is"],"радостна":["sevinçli","sı"],"жълтата":["sarı","sı"],"куртка":["ceket","is"],"двете":["ikisi","sa"],"близо":["yakın","zr"],"минават":["geçerler","fi"],"по":["boyunca / -de","ed"],"пътя":["yol","is"],"пекарна":["fırın (ekmekçi)","is"],"мирише":["kokar","fi"],"топъл":["ılık, sıcak","sı"],"искаш":["istersin","fi"],"купуват":["alırlar","fi"],"топли":["sıcak, ılık","sı"],"питки":["yuvarlak ekmek","is"],"оживено":["hareketli, canlı","sı"],"зеленчуци":["sebzeler","is"],"доматите":["domatesler","is"],"домати":["domatesler","is"],"червени":["kırmızı","sı"],"колко":["ne kadar","so"],"струват":["fiyatı -dır","fi"],"два":["iki","sa"],"лева":["lev (para)","is"],"кило":["kilo","is"],"човекът":["kişi, adam","is"],"взема":["alır","fi"],"три":["üç","sa"],"килограма":["kilogram","is"],"брои":["sayar","fi"],"плодовете":["meyveler","is"],"ябълките":["elmalar","is"],"зелени":["yeşil","sı"],"сладки":["tatlı","sı"],"динята":["karpuz","is"],"диня":["karpuz","is"],"тежка":["ağır","sı"],"тежи":["ağırlığında","fi"],"пет":["beş","sa"],"продавачът":["satıcı","is"],"нямаме":["-miz yok","fi"],"пари":["para","is"],"смее":["güler (се смее)","fi"],"вземат":["alırlar","fi"],"половин":["yarım","sı"],"тезгях":["tezgâh","is"],"като":["gibi","ed"],"сняг":["kar","is"],"пробвайте":["deneyin","fi"],"жената":["kadın","is"],"пробва":["dener","fi"],"парче":["parça","is"],"вкусно":["lezzetli","sı"],"меда":["bal (edatli)","is"],"накрая":["sonunda","zr"],"вижда":["görür","fi"],"цветя":["çiçekler","is"],"червените":["kırmızı","sı"],"рози":["güller","is"],"красиви":["güzel","sı"],"кого":["kimi","so"],"тези":["bunlar","zm"],"тази":["bu (kadın)","zm"],"теб":["seni","zm"],"бабо":["nine! (hitap)","is"],"изненадана":["şaşırmış","sı"],"щастлива":["mutlu","sı"],"прегръща":["kucaklar","fi"],"мило":["tatlı, sevimli","sı"],"дете":["çocuk","is"],"обяд":["öğle yemeği","is"],"чиниите":["tabaklar","is"],"носи":["taşır / getirir","fi"],"храната":["yemek","is"],"вкусна":["lezzetli","sı"],"ядат":["yerler","fi"],"градината":["bahçe","is"],"топло":["ılık","sı"],
+"четири":["dört","sa"],"шест":["altı","sa"],"десет":["on","sa"],"дванадесет":["on iki","sa"],"шестнайсет":["on altı","sa"],"лека нощ":["İyi geceler!","kp"],"довиждане":["Hoşça kal!","kp"],"добра вечер":["İyi akşamlar!","kp"],"моля":["rica ederim / lütfen","ün"],"ние":["biz","zm"],"вас":["sizi","zm"],"теб":["seni","zm"],"ти":["sen","zm"],"какво":["ne","so"],"кой":["kim","so"],"пред":["önünde","ed"],"при":["yanında / yanına","ed"],"над":["üstünde","ed"],"между":["arasında","ed"],"имам":["sahip olmak","fi"],"мога":["-abilmek","fi"],"знам":["bilmek","fi"],"искам":["istemek","fi"],"ям":["yemek yemek","fi"],"пия":["içmek","fi"],"баща":["baba","is"],"брат":["abi, erkek kardeş","is"],"сестра":["abla, kız kardeş","is"],"дядо":["dede","is"],"син":["oğul","is"],"дъщеря":["kız evlat","is"],"стол":["sandalye","is"],"ключ":["anahtar","is"],"телефон":["telefon","is"],"синьо":["mavi","sı"],"жълт":["sarı","sı"],"черен":["siyah","sı"],"бял":["beyaz","sı"],"зелен":["yeşil","sı"],"розов":["pembe","sı"],"сив":["gri","sı"],"висок":["uzun (boy)","sı"],"нисък":["kısa (boy)","sı"],"стар":["yaşlı, eski","sı"],"млад":["genç","sı"],"бърз":["hızlı","sı"],"весел":["neşeli","sı"],"силен":["güçlü","sı"],"сладък":["tatlı","sı"],"и":["ve","ba"],"а":["ama / ise","ba"],"но":["ama","ba"],"ще":["-ecek (gelecek)","kp"],
+"казвам се":["adım (ismim)","kp"],"години":["yıl / yaş","is"],"моето":["benim (nötr)","zm"],"семейство":["aile","is"],"семейството":["aile","is"],"души":["kişi (sayım)","is"],"живеем":["yaşarız","fi"],"нашата":["bizim","zm"],"къща":["ev","is"],"моята":["benim (kadın)","zm"],"моят":["benim","zm"],"моя":["benim (kadın)","zm"],"мой":["benim","zm"],"твоето":["senin (nötr)","zm"],"твоят":["senin","zm"],"лекар":["doktor","is"],"болница":["hastane","is"],"умна":["akıllı","sı"],"готви":["yemek yapar, pişirir","fi"],"я":["onu (kadın, kısa)","zm"],"ме":["beni","zm"],"учител":["öğretmen (erkek)","is"],"училище":["okul","is"],"училището":["okul","is"],"футбол":["futbol","is"],"заедно":["birlikte","zr"],"играем":["oynarız","fi"],"весела":["neşeli","sı"],"кукли":["oyuncak bebekler","is"],"рисува":["resim çizer","fi"],"стая":["oda","is"],"стаята":["oda","is"],"играчки":["oyuncaklar","is"],"село":["köy","is"],"селото":["köy","is"],"тихо":["sessiz","sı"],"градина":["bahçe","is"],"ябълки":["elmalar","is"],"вкусен":["lezzetli","sı"],"ходим":["gideriz","fi"],"често":["sık","zr"],"спокойно":["sakin, huzurlu","sı"],"вкъщи":["evde","zr"],"ядем":["yeriz","fi"],"супа":["çorba","is"],"говорим":["konuşuruz","fi"],"смеем":["güleriz (се смеем)","fi"],"любим":["sevdiği, favori","sı"],"сме":["-iz (biz olmak)","fi"],"щастливи":["mutlu (çoğul)","sı"],"щастлив":["mutlu","sı"],"силни":["güçlü (çoğul)","sı"],"неделя":["pazar (gün)","is"],"дом":["ev, yuva","is"],
+"зима":["kış","is"],"зимата":["kış","is"],"студено":["soğuk","sı"],"вали":["yağar","fi"],"сятнег":["kar","is"],"сятнежен човек":["kardan adam","kp"],"сятнежен човек_":["kardan adam","kp"],"носят":["giyerler / taşır","fi"],"якета":["ceketler","is"],"красива":["güzel","sı"],"правим":["yaparız","fi"],"сятнежен човек__":["kardan adam","kp"],"носът":["burun","is"],"морков":["havuç","is"],"главата":["baş","is"],"шапка":["şapka","is"],"пролет":["ilkbahar","is"],"пролетта":["ilkbahar","is"],"растат":["büyür","fi"],"птиците":["kuşlar","is"],"пеят":["öterler, şarkı söyler","fi"],"зелена":["yeşil","sı"],"през":["boyunca / -de (zaman)","ed"],"дъжд":["yağmur","is"],"дъждът":["yağmur","is"],"дъжда":["yağmur (edatli)","is"],"дъга":["gökkuşağı","is"],"дъгата":["gökkuşağı","is"],"широка":["geniş","sı"],"патиците":["ördekler","is"],"плуват":["yüzerler","fi"],"езерото":["göl","is"],"всичко":["her şey","zm"],"всичките":["hepsi","zm"],"живо":["canlı","sı"],"лято":["yaz","is"],"лятото":["yaz","is"],"море":["deniz","is"],"плуваме":["yüzeriz","fi"],"сладолед":["dondurma","is"],"есен":["sonbahar","is"],"есента":["sonbahar","is"],"листата":["yapraklar","is"],"жълти":["sarı (çoğul)","sı"],"падат":["düşerler","fi"],"година":["yıl","is"],"идват":["gelirler","fi"],"сезон":["mevsim","is"],
+"пътуваме":["yolculuk ederiz","fi"],"варна":["Varna","öz"],"град":["şehir","is"],"градът":["şehir","is"],"града":["şehir (edatli)","is"],"чантите":["çantalar","is"],"вземам":["alırım","fi"],"всички":["herkes","zm"],"готови":["hazır","sı"],"гарата":["(tren) istasyonu","is"],"шумна":["gürültülü","sı"],"купува":["satın alır","fi"],"билета":["bilet","is"],"билетът":["bilet","is"],"билетите":["biletler","is"],"питам":["sorarım","fi"],"влака":["tren","is"],"влакът":["tren","is"],"закъснява":["gecikir","fi"],"пристига":["varır","fi"],"дълъг":["uzun","sı"],"влизат":["girerler / binerler","fi"],"влизаме":["gireriz / bineriz","fi"],"вагона":["vagon","is"],"намираме":["buluruz","fi"],"местата":["(oturma) yerleri","is"],"кондукторът":["kondüktör","is"],"проверява":["kontrol eder","fi"],"пътуването":["yolculuk","is"],"започва":["başlar","fi"],"върви":["gider, ilerler","fi"],"виждам":["görürüm","fi"],"полета":["tarlalar","is"],"гори":["ormanlar","is"],"реки":["nehirler","is"],"кравите":["inekler","is"],"пасат":["otlarlar","fi"],"поляната":["çayır","is"],"по-късно":["daha sonra","zr"],"заспивам":["uyuyakalırım","fi"],"слизаме":["ineriz","fi"],"чувам":["duyarım","fi"],"вълните":["dalgalar","is"],"харесва":["hoşuna gider, sever","fi"],"плажа":["plaj","is"],"пясъкът":["kum","is"],"пясък":["kum","is"],"брега":["kıyı","is"],"най-хубавият":["en güzel","sı"],"пада":["düşer / batar","fi"],"оранжево":["turuncu","sı"],"кораби":["gemiler","is"],"кораб":["gemi","is"],"далече":["uzakta","zr"],"летят":["uçarlar","fi"],"чудесно":["harika","sı"],
+"петък":["cuma","is"],"цялото":["bütün","sı"],"ресторант":["restoran","is"],"ресторантът":["restoran","is"],"центъра":["merkez","is"],"уютно":["sıcak (mekân), rahat","sı"],"гладни":["aç (çoğul)","sı"],"сервитьорът":["garson","is"],"менюто":["menü","is"],"риба":["balık","is"],"рибата":["balık","is"],"пиле":["tavuk","is"],"пилето":["tавук","is"],"десерти":["tatlılar","is"],"десерт":["tatlı","is"],"десертът":["tatlı","is"],"изглежда":["görünür","fi"],"изборът":["seçim","is"],"труден":["zor","sı"],"искате":["istersiniz","fi"],"пилешка":["tavuk (çorba)","sı"],"картофи":["patates","is"],"месо":["et","is"],"ориз":["pirinç","is"],"минерална":["maden (su)","sı"],"веднага":["hemen","zr"],"супата":["çorba","is"],"гореща":["sıcak","sı"],"лимон":["limon","is"],"меко":["yumuşak","sı"],"приятен апетит":["Afiyet olsun!","kp"],"искаме":["isteriz","fi"],"торта":["pasta","is"],"тортата":["pasta","is"],"шоколад":["çikolata","is"],"прекрасен":["harika","sı"],"сок":["(meyve) suyu","is"],"сметката":["hesap","is"],"цените":["fiyatlar","is"],"плаща":["öder","fi"],"карта":["kart","is"],"бакшиш":["bahşiş","is"],"благодарим":["teşekkür ederiz","ün"],"казваме":["deriz","fi"],"ви":["size","zm"],"връщаме":["döneriz (се връщаме)","fi"],"доволни":["memnun","sı"],"беше":["-ydi (geçmiş)","fi"],"колата":["araba","is"],"тъмна":["karanlık","sı"],"луната":["ay","is"],"свети":["parlar","fi"],"дойдем":["geleceğiz","fi"],
+"ива":["İva","öz"],"рожден ден":["doğum günü","kp"],"честит":["kutlu olsun","ün"],"честит рожден ден":["Doğum günün kutlu olsun!","kp"],"балони":["balonlar","is"],"балоните":["balonlar","is"],"сини":["mavi (çoğul)","sı"],"ягоди":["çilek","is"],"свещи":["mumlar","is"],"свещите":["mumlar","is"],"правилно":["doğru","zr"],"звънецът":["(kapı) zili","is"],"звъни":["çalar (zil)","fi"],"приятелите":["arkadaşlar","is"],"приятели":["arkadaşlar","is"],"мартин":["Martin","öz"],"подарък":["hediye","is"],"подаръците":["hediyeler","is"],"нина":["Nina","öz"],"казват":["derler","fi"],"игри":["oyunlar","is"],"танцуват":["dans ederler","fi"],"танцува":["dans eder","fi"],"смеят":["gülerler (се смеят)","fi"],"после":["sonra","zr"],"криеница":["saklambaç","is"],"забавлението":["eğlence","is"],"песента":["şarkı","is"],"желание":["dilek","is"],"изгася":["üfler, söndürür","fi"],"рукопляскат":["alkışlarlar","fi"],"сега":["şimdi","zr"],"отваря":["açar","fi"],"първият":["ilk","sı"],"първи":["ilk","sı"],"кутията":["kutu","is"],"топка":["top","is"],"топката":["top","is"],"приказки":["masallar","is"],"тръгват":["(yola) çıkarlar","fi"],"тръгва":["(yola) çıkar","fi"],
+"събуждам":["uyanırım (се събуждам)","fi"],"шума":["ses (gürültü)","is"],"капките":["damlalar","is"],"играта":["oyun","is"],"мама":["anne","is"],"показва":["gösterir","fi"],"дрехите":["kıyafetler","is"],"дъждобран":["yağmurluk","is"],"дъждобрана":["yağmurluk","is"],"светъл":["parlak","sı"],"ботуши":["çizmeler","is"],"забравям":["unuturum","fi"],"чадъра":["şemsiye","is"],"чадърът":["şemsiye","is"],"мокра":["ıslak","sı"],"локви":["su birikintileri","is"],"локвите":["su birikintileri","is"],"скачам":["atlarım","fi"],"пръска":["sıçratır","fi"],"навсякъде":["her yere","zr"],"пази":["korur","fi"],"кихам":["hapşırırım","fi"],"пъти":["kez, defa","is"],"боли":["ağrır","fi"],"гърлото":["boğaz","is"],"докосва":["dokunur","fi"],"челото":["alın","is"],"температура":["(vücut) ateşi","is"],"лекаря":["doktor","is"],"лекарят":["doktor","is"],"чанта":["çanta","is"],"отговарям":["cevap veririm","fi"],"лека":["hafif","sı"],"настинка":["nezle","is"],"лекарство":["ilaç","is"],"пий":["iç (emir)","fi"],"легни":["yat (emir)","fi"],"скоро":["yakında","zr"],"здрав":["sağlıklı","sı"],"доктор":["doktor","is"],"лежа":["yatarım","fi"],"чай":["çay","is"],"чаят":["çay","is"],"четя":["okurum","fi"],"котката":["kedi","is"],"по-добре":["daha iyi","zr"],"спира":["durur","fi"],"имаш":["sahipsin","fi"],
+"вървя":["yürürüm","fi"],"петър":["Petar","öz"],"носим":["taşırız","fi"],"раниците":["sırt çantaları","is"],"тетрадка":["defter","is"],"дворът":["avlu","is"],"пълен":["dolu","sı"],"класната стая":["sınıf","kp"],"учителят":["öğretmen","is"],"учителката":["öğretmen (kadın)","is"],"дъската":["(kara)tahta","is"],"господин":["Bey (hitap)","is"],"иванов":["İvanov","öz"],"класа":["sınıf","is"],"сядаме":["otururuz","fi"],"математика":["matematik","is"],"числа":["sayılar","is"],"плюс":["artı","ba"],"вдигам":["kaldırırım","fi"],"ръката":["el, kol","is"],"почивка":["teneffüs","is"],"момчетата":["erkek çocuklar","is"],"момичетата":["kız çocuklar","is"],"въже":["ip","is"],"вторият":["ikinci","sı"],"втори":["ikinci","sı"],"български":["Bulgar (dil)","sı"],"език":["dil","is"],"приказка":["masal","is"],"приказката":["masal","is"],"вълка":["kurt","is"],"вълкът":["kurt","is"],"заека":["tavşan","is"],"заекът":["tavşan","is"],"гладен":["aç","sı"],"задава":["sorar (soru sorar)","fi"],"въпроси":["sorular","is"],"рисуваме":["resim çizeriz","fi"],"слънце":["güneş","is"],"хвали":["över","fi"],"рисунките":["çizimler","is"],"последният":["son","sı"],"учебен":["okul- (eğitim-)","sı"],"играеш":["oynarsın","fi"],"важно":["önemli","sı"]};
+D["сятнег"]=["kar","is"];D["снежен човек"]=["kardan adam","kp"];
+
+const STORIES=[
+{id:'s1',bg:'Нов ден',tr:'Yeni Bir Gün',tags:'Günlük rutin · Saatler · Yiyecekler',focus:['събужда','става','закуска','чака','работи','обича','пита','обед','благодаря','чете','вечерта','утре'],scenes:[
+{l:'Мария е в София.|Maria Sofya’dadır.;Тя живее в малък апартамент.|O küçük bir dairede yaşar.;Слънцето е високо в небето.|Güneş gökyüzünde yüksektedir.;Часовникът е седем.|Saat yedidir.;Мария се събужда.|Maria uyanır.;„Добро утро!” — казва тя.|«Günaydın!» — der o.;Тя не е уморена.|O yorgun değildir.'},
+{l:'Мария става от леглото.|Maria yataktan kalkar.;Тя отива в банята.|Banyoya gider.;Студената вода е добра за лицето.|Soğuk su yüz için iyidir.;След това тя облича синя рокля.|Sonra mavi bir elbise giyer.;Огледалото е голямо и чисто.|Ayna büyük ve temizdir.;Тя гледа в огледалото и се усмихва.|Aynaya bakar ve gülümser.;„Днес е понеделник.” — мисли тя.|«Bugün pazartesi.» — diye düşünür.'},
+{l:'Мария отива в кухнята.|Maria mutfağa gider.;Тя иска закуска.|Kahvaltı ister.;На масата има хляб, сирене и мед.|Masada ekmek, peynir ve bal vardır.;Тя прави кафе.|Kahve yapar.;Кафето е много горещо.|Kahve çok sıcaktır.;Тя яде две филийки хляб със сирене.|Peynirli iki dilim ekmek yer.;„Хубаво е!” — казва Мария.|«Güzel!» — der Maria.'},
+{l:'В осем часа Мария излиза от дома.|Sekizde Maria evden çıkar.;Улицата е тиха.|Sokak sessizdir.;Тя чака автобуса на спирката.|Durakta otobüsü bekler.;Автобусът е червен и голям.|Otobüs kırmızı ve büyüktür.;В автобуса има много хора.|Otobüste çok insan vardır.;Един мъж пита: „Вие сте Мария?”|Bir adam sorar: «Siz Maria misiniz?»;„Да, аз съм. Здравейте!”|«Evet, öyleyim. Merhaba!»'},
+{l:'Мария работи в библиотека.|Maria bir kütüphanede çalışır.;Тя много обича книгите.|Kitapları çok sever.;Библиотеката е голяма и светла.|Kütüphane büyük ve aydınlıktır.;В нея има хиляди книги.|İçinde binlerce kitap vardır.;Мария чете и пише цял ден.|Maria bütün gün okur ve yazar.;Един ученик пита за една книга.|Bir öğrenci bir kitap hakkında sorar.;Мария помага на него с радост.|Maria ona sevinçle yardım eder.'},
+{l:'На обед Мария отива в малко кафе.|Öğlen Maria küçük bir kafeye gider.;Тя седи на маса до прозореца.|Pencere kenarındaki masaya oturur.;Тя поръчва салата и вода.|Salata ve su sipariş eder.;Приятелят ѝ Иван идва.|Arkadaşı İvan gelir.;„Здравей, Мария! Как си?” — пита Иван.|«Merhaba Maria! Nasılsın?» — sorar İvan.;„Добре съм, благодаря!” — отговаря Мария.|«İyiyim, teşekkürler!» — cevaplar Maria.;Те говорят за живота и за книгите.|Hayattan ve kitaplardan konuşurlar.'},
+{l:'Вечерта Мария е у дома.|Akşam Maria evdedir.;Тя седи до прозореца и гледа навън.|Pencerenin yanına oturur, dışarıyı seyreder.;Небето е тъмно и звездите са малки.|Gökyüzü karanlık, yıldızlar küçük.;Вятърът е лек и хладен.|Rüzgâr hafif ve serindir.;Тя чете любимата си книга в леглото.|Yatakta sevdiği kitabı okur.;След един час тя заспива.|Bir saat sonra uykuya dalar.;Утре отново е нов ден.|Yarın yine yeni bir gündür.'}]},
+{id:'s2',bg:'Кучето Барни',tr:'Köpek Barney',tags:'Soru kalıpları · Renkler · Yerler',focus:['къде','тук','извинете','куче','парка','под','зад','към','край','тича','чува','моста'],scenes:[
+{l:'Никола е малко момче от Пловдив.|Nikola, Plovdiv’li küçük bir çocuk.;Той има куче.|Onun bir köpeği var.;Кучето е кафяво и бяло.|Köpek kahverengi ve beyaz.;Името на кучето е Барни.|Köpeğin adı Barney.;Барни е добър приятел на Никола.|Barney, Nikola’nın iyi arkadaşı.;Всяка сутрин Никола дава храна на Барни.|Her sabah Nikola Barney’e yemek verir.;Барни маха с опашката си.|Barney kuyruğunu sallar.'},
+{l:'Една сутрин Барни го няма в двора.|Bir sabah Barney avluda yok.;„Къде е Барни?” — пита Никола.|«Barney nerede?» — sorar Nikola.;Той гледа наляво и надясно.|Sola ve sağa bakar.;Кучето не е под дървото.|Köpek ağacın altında değil.;Не е и зад къщата.|Evin arkasında da değil.;Майка му е в кухнята.|Annesi mutfakta.;„Мамо, Барни го няма!” — казва Никола.|«Anne, Barney yok!» — der Nikola.'},
+{l:'Никола излиза на улицата.|Nikola sokağa çıkar.;Съседката Петрова стои до портата.|Komşu Petrova kapının yanında durur.;„Добър ден!” — казва Никола.|«İyi günler!» — der Nikola.;„Видяхте ли кучето ми? То е кафяво и бяло.”|«Köpeğimi gördünüz mü? Kahverengi ve beyaz.»;„Не, не видях.” — казва Петрова.|«Hayır, görmedim.» — der Petrova.;„Питайте в парка.”|«Parkta sorun.»;„Там много хора ходят с кучета.”|«Oraya çok insan köpeğiyle gider.»'},
+{l:'Никола тича в парка.|Nikola parkta koşar.;Децата играят на игрището.|Çocuklar oyun alanında oynar.;„Извинете!” — казва Никола.|«Affedersiniz!» — der Nikola.;„Тук ли е кафяво куче? То е малко.”|«Burada kahverengi köpek var mı? Küçük.»;Едно момиче казва: „Да!”|Bir kız der: «Evet!»;„Едно куче бяга към реката.”|«Bir köpek nehire doğru koşuyor.»;„Благодаря много!” — казва Никола и тича.|«Çok teşekkürler!» — der Nikola ve koşar.'},
+{l:'Никола бърза към реката.|Nikola nehire doğru acele eder.;Той чува лаене.|Havlama duyar.;Зад дърветата стои едно куче.|Ağaçların arkasında bir köpek durur.;То е голямо и черно.|O büyük ve siyah.;„Това не е Барни.” — мисли Никола.|«Bu Barney değil.» — diye düşünür.;Той е тъжен и уморен.|O üzgün ve yorgun.;Той сяда на тревата край реката.|Nehir kıyısındaki çimene oturur.'},
+{l:'Никола чува още лаене.|Nikola daha çok havlama duyar.;Гласът идва от моста.|Ses köprüden geliyor.;Под моста стои малко куче.|Köprünün altında küçük bir köpek.;То е кафяво и бяло!|O kahverengi ve beyaz!;„Барни!” — вика Никола силно.|«Barney!» — Nikola bağırdadır.;Кучето тича бързо към него.|Köpek hızla ona koşar.;Никола гали ушите му.|Nikola kulaklarını okşar.'},
+{l:'Двамата се връщат у дома.|İkisi eve döner.;Майката стои на вратата.|Anne kapının önünde durur.;„Ето го Барни!” — казва Никола с усмивка.|«İşte Barney!» — der gülümseyerek.;Барни пие много вода.|Barney çok su içer.;След това той спи в кошарата.|Sonra kulübesinde uyur.;Никола дава на Барни кост.|Nikola Barney’e kemik verir.;Днес е много хубав ден.|Bugün çok güzel bir gün.'}]},
+{id:'s3',bg:'Баба и пазарът',tr:'Büyükanne ve Çarşı',tags:'Sayılar · Alışveriş · Yiyecekler',focus:['събота','пазара','колко','лева','кило','взема','купуват','сирене','мед','диня','цветя','обяд'],scenes:[
+{l:'Събота е.|Cumartesidir.;Баба Станка става рано.|Nine Stanka erken kalkar.;Нейната внучка Елица също става.|Torunu Elitsa da kalkar.;„Днес отиваме на пазара.” — казва баба.|«Bugün çarşıya gidiyoruz.» — der nine.;Елица е много радостна.|Elitsa çok sevinçli.;Тя облича жълтата си куртка.|Sarı ceketini giyer.;В осем часа двете излизат от дома.|Sekizde ikisi evden çıkar.'},
+{l:'Пазарът е близо.|Çarşı yakındır.;Те минават по улицата.|Sokaktan geçerler.;По пътя има пекарна.|Yolda bir fırın var.;Мирише на топъл хляб.|Sıcak ekmek kokusu gelir.;„Искаш ли хляб?” — пита баба.|«Ekmek ister misin?» — sorar nine.;„Да, благодаря!” — казва Елица.|«Evet, teşekkürler!» — der Elitsa.;Те купуват две топли питки.|İki sıcak ekmek alırlar.'},
+{l:'На пазара е оживено.|Çarşı hareketlidir.;Много хора купуват зеленчуци.|Çok insan sebze alır.;Домати — червени и големи.|Domatesler — kırmızı ve büyük.;„Колко струват доматите?” — пита баба.|«Domates ne kadar?» — sorar nine.;„Два лева за кило.” — отговаря човекът.|«Kilo başına iki lev.» — der adam.;Баба взема три килограма.|Nine üç kilo alır.;Елица брои: един, два, три…|Elitsa sayar: bir, iki, üç…'},
+{l:'След това те отиват при плодовете.|Sonra meyvelere giderler.;Ябълките са зелени и сладки.|Elmalar yeşil ve tatlı.;Динята е голяма и тежка.|Karpuz büyük ve ağır.;Елица иска една диня.|Elitsa bir karpuz ister.;„Тази диня тежи пет килограма.” — казва продавачът.|«Bu karpuz beş kilo.» — der satıcı.;„Нямаме пари за нея.” — казва баба и се смее.|«Paramız yok.» — der nine ve güler.;Те вземат половин диня.|Yarım karpuz alırlar.'},
+{l:'До тях има тезгях със сирене и мед.|Yanlarında peynir-bal tezgâhı var.;Сиренето е бяло като сняг.|Peynir kar gibi beyaz.;„Пробвайте!” — казва жената.|«Deneyin!» — der kadın.;Баба пробва малко парче.|Nine küçük parça dener.;„Много е вкусно!” — казва тя.|«Çok lezzetli!» — der o.;Елица също пробва сиренето и меда.|Elitsa da peyniri ve balı dener.;Те купуват едно кило сирене.|Bir kilo peynir alırlar.'},
+{l:'Накрая Елица вижда цветя.|Sonunda Elitsa çiçek görür.;Червените рози са много красиви.|Kırmızı güller çok güzel.;„За кого са тези цветя?” — пита баба.|«Bu çiçekler kimin için?» — sorar nine.;„За теб, бабо!” — казва Елица.|«Senin için, nine!» — der Elitsa.;Баба е изненадана и много щастлива.|Nine şaşkın ve çok mutlu.;Тя прегръща внучката си.|Torununu kucaklar.;„Ти си мило дете.” — казва тя.|«Sen tatlı bir çocuksun.» — der o.'},
+{l:'У дома баба прави обяд.|Evde nine öğle yemeği yapar.;На масата има салата, сирене и хляб.|Masada salata, peynir, ekmek var.;Елица носи чиниите.|Elitsa tabakları taşır.;Храната е много вкусна.|Yemek çok lezzetli.;След обяд те ядат диня в градината.|Sonra bahçede karpuz yerler.;Слънцето е топло, вятърът е лек.|Güneş ılık, rüzgâr hafif.;Съботата е хубав ден.|Cumartesi güzel bir gün.'}]},
+{id:'s4',bg:'Моето семейство',tr:'Ailem',tags:'Aile · Ev · Meslekler',focus:['семейство','лекар','учител','сестра','село','готви','супа','любим','неделя','вкъщи','заедно','щастливи'],scenes:[
+{l:'Казвам се Стефан.|Adım Stefan.;Аз съм на десет години.|On yaşındayım.;Това е моето семейство.|Bu benim ailem.;В семейството има четири души.|Ailede dört kişi var.;Майка, баща, сестра и аз.|Anne, baba, kız kardeş ve ben.;Ние живеем в Пловдив.|Biz Plovdiv’de yaşarız.;Нашата къща е голяма.|Bizim evimiz büyük.'},
+{l:'Моята майка е лекар.|Annem doktordur.;Тя работи в болница.|Hastanede çalışır.;Тя е умна и добра.|O akıllı ve iyi.;Майка ми готви много хубаво.|Annem çok güzel yemek yapar.;Вечерта тя чете книга.|Akşam kitap okur.;Аз я обичам много.|Ben onu çok severim.;Тя също ме обича.|O da beni sever.'},
+{l:'Баща ми е учител.|Babam öğretmend.;Той работи в училище.|Okulda çalışır.;Той е висок и силен.|O uzun boylu ve güçlü.;Той обича футбол.|Futbolu sever.;В събота играем заедно.|Cumartesi birlikte oynarız.;Той е много весел.|O çok neşeli.;Баща ми е и добър приятел.|Babam iyi bir arkadaş.'},
+{l:'Сестра ми е на шест години.|Kız kardeşim altı yaşında.;Тя е малка и весела.|O küçük ve neşeli.;Тя играе с кукли.|Oyuncak bebeklerle oynar.;Куклите са красиви.|Bebekler güzel.;Тя рисува всяка вечер.|Her akşam resim çizer.;Нейната стая е синя.|Onun odası mavi.;В стаята има играчки.|Odada oyuncaklar var.'},
+{l:'Баба и дядо живеят в село.|Nine ve dede köyde yaşar.;Селото е малко и тихо.|Köy küçük ve sessiz.;Дядо има голяма градина.|Dedenin büyük bahçesi var.;В градината има ябълки и рози.|Bahçede elma ve gül var.;Баба прави вкусен хляб.|Nine lezzetli ekmek yapar.;Ние ходим при тях често.|Sık onlara gideriz.;Там е много спокойно.|Orası çok huzurlu.'},
+{l:'Вечерта семейството е вкъщи.|Akşam aile evdedir.;Ние ядем заедно на масата.|Masada birlikte yeriz.;Майка ми готви супа.|Annem çorba yapar.;Баща ми носи хляб.|Babam ekmek getirir.;Говорим за деня.|Gün hakkında konuşuruz.;Смеем се заедно.|Birlikte güleriz.;Това е моят любим час.|En sevdiğim andır.'},
+{l:'Моето семейство е хубаво.|Ailem güzeldir.;Ние сме щастливи.|Biz mutluyuz.;Заедно сме силни.|Birlikte güçlüyüz.;Аз много обичам моето семейство.|Ailemi çok severim.;В неделя ходим при баба.|Pazar nineye gideriz.;Семейството е мой дом.|Aile benim yuvam.;Голямо ли е твоето семейство?|Ailen büyük mü?'}]},
+{id:'s5',bg:'Четири годишни времена',tr:'Dört Mevsim',tags:'Mevsimler · Hava durumu · Doğa',focus:['зима','вали','сняг','пролетта','дъжд','лятото','море','плуваме','есента','листата','сезон','година'],scenes:[
+{l:'Зима е.|Kıştır.;Студено е навън.|Dışarıda soğuk.;Вали сняг.|Kar yağıyor.;Небето е бяло и сиво.|Gökyüzü beyaz ve gri.;Децата носят топли якета.|Çocuklar sıcak ceket giyer.;Има сняг по улицата.|Sokakta kar var.;Зимата е красива.|Kış güzeldir.'},
+{l:'Ние правим снежен човек.|Kardan adam yaparız.;Човекът е голям.|Adam büyüktür.;Носът му е морков.|Burnu havuç.;На главата му има шапка.|Başında şapka var.;Сестра ми се смее.|Kız kardeşim güler.;Но е много студено!|Ama çok soğuk!;Вечерта сме вкъщи, топло и добре.|Akşam evdeyiz, sıcacık.'},
+{l:'Пролетта идва след зимата.|İlkbahar kıştan sonra gelir.;Слънцето е топло.|Güneş ılık.;Цветята растат.|Çiçekler büyür.;Птиците пеят.|Kuşlar öter.;Небето е синьо.|Gökyüzü mavi.;Тревата е зелена.|Çimen yeşil.;Аз много обичам пролетта.|İlkbaharı çok severim.'},
+{l:'През пролетта вали дъжд.|İlkbaharda yağmur yağar.;Дъждът е лек.|Yağmur hafif.;След дъжда има дъга.|Yağmurdan sonra gökkuşağı.;Дъгата е широка.|Gökkuşağı geniş.;Патиците плуват в езерото.|Ördekler gölde yüzer.;Всичко е зелено и живо.|Her şey yeşil ve canlı.;Пролетта е весела.|İlkbahar neşeli.'},
+{l:'Лятото идва.|Yaz gelir.;Лятото е горещо.|Yaz sıcak.;Ние сме на море.|Denizdeyiz.;Плуваме в морето.|Denizde yüzeriz.;Морето е синьо и топло.|Deniz mavi ve ılık.;Ядем сладолед.|Dondurma yeriz.;Децата са щастливи.|Çocuklar mutlu.'},
+{l:'Есента идва след лятото.|Sonbahar yazdan sonra gelir.;Не е горещо и не е студено.|Ne sıcak ne soğuk.;Листата са жълти и червени.|Yapraklar sarı ve kırmızı.;Листата падат от дърветата.|Yapraklar ağaçtan düşer.;Често вали.|Sık yağmur yağar.;Вятърът е силен.|Rüzgâr güçlü.;Ние ходим в парка.|Parka gideriz.'},
+{l:'Зима, пролет, лято, есен.|Kış, ilkbahar, yaz, sonbahar.;Четири годишни времена.|Dört mevsim.;Всичките четири са красиви.|Dördü de güzel.;Всяка година идват отново.|Her yıl yeniden gelirler.;Моят любим сезон е лятото.|Sevdiğim mevsim yaz.;Обичам морето и слънцето.|Denizi ve güneşi severim.;А ти? Кой е твоят любим сезон?|Sen? Sevdiğin mevsim hangisi?'}]},
+{id:'s6',bg:'Пътуване до Варна',tr:'Varna’ya Yolculuk',tags:'Ulaşım · Seyahat · Deniz',focus:['пътуваме','гарата','купува','влака','вагона','виждам','слизаме','вълните','плажа','пясък','кораби','ще'],scenes:[
+{l:'Днес пътуваме до Варна.|Bugün Varna’ya gidiyoruz.;Варна е град на морето.|Varna denizde bir şehir.;Майка ми готви храна за пътя.|Annem yola yemek yapıyor.;Баща ми взема чантите.|Babam çantaları alıyor.;Аз вземам моята шапка.|Ben şapkamı alıyorum.;Всички са готови.|Herkes hazır.;Сестра ми е много щастлива.|Kız kardeşim çok mutlu.'},
+{l:'Ние отиваме на гарата.|İstasyona gideriz.;Гарата е голяма и шумна.|İstasyon büyük ve gürültülü.;Баща ми купува два билета.|Babam iki bilet alır.;„Колко струва билетът?” — питам аз.|«Bilet ne kadar?» — ben sorarım.;„Десет лева.” — отговаря човекът.|«On lev.» — adam cevap verir.;Чакаме влака.|Treni bekleriz.;Влакът закъснява малко.|Tren biraz gecikir.'},
+{l:'Влакът пристига.|Tren gelir.;Той е дълъг и бърз.|O uzun ve hızlı.;Хората влизат в вагона.|İnsanlar vagona biner.;Ние намираме местата си.|Yerlerimizi buluruz.;Сестра ми седи до прозореца.|Kardeşim pencere kenarında.;Кондукторът проверява билетите.|Kondüktör biletleri kontrol eder.;Пътуването започва.|Yolculuk başlar.'},
+{l:'Влакът върви бързо.|Tren hızla gider.;Аз виждам полета и гори.|Tarla ve orman görürüm.;Виждам села и реки.|Köy ve nehir görürüm.;Кравите пасат на поляната.|İnekler çayırda otlar.;Сестра ми рисува дърветата.|Kardeşim ağaçları çizer.;Малко по-късно аз заспивам.|Sonra uyuyakalırım.;Събужда ме гласът на баща ми.|Babamın sesi uyandırır.'},
+{l:'„Варна! Варна!” — вика кондукторът.|«Varna! Varna!» — kondüktör bağırır.;Ние слизаме от влака.|Trenden ineriz.;Във Варна е горещо.|Varna’da hava sıcak.;Чувам вълните.|Dalgaları duyarım.;Морето е голямо и синьо.|Deniz büyük ve mavi.;Градът ми харесва.|Şehir hoşuma gidiyor.;Аз съм щастлив.|Ben mutluyum.'},
+{l:'Отиваме на плажа.|Plaja gideriz.;Пясъкът е топъл.|Kum sıcak.;Правим къща от пясък.|Kumdan ev yaparız.;Плуваме заедно.|Birlikte yüzeriz.;Вълните са малки.|Dalgalar küçük.;Ядем сладолед на брега.|Kıyıda dondurma yeriz.;Това е най-хубавият ден.|En güzel gün.'},
+{l:'Вечерта сме на брега.|Akşam kıyıdayız.;Слънцето пада в морето.|Güneş denize batar.;Небето е оранжево.|Gökyüzü turuncu.;Виждам кораби далече.|Uzakta gemiler görürüm.;Птиците летят над морето.|Kuşlar deniz üstünde uçar.;Пътуването е чудесно.|Yolculuk harika.;Утре отново ще плуваме.|Yarın yine yüzeceğiz.'}]},
+{id:'s7',bg:'Вкусна вечеря',tr:'Lezzetli Akşam',tags:'Restoran · Yiyecek · Sipariş',focus:['петък','ресторант','менюто','риба','пиле','месо','десерт','сметката','плаща','бакшиш','връщаме','луната'],scenes:[
+{l:'Днес е петък.|Bugün cuma.;Цялото семейство отива в ресторант.|Bütün aile restorana gider.;Ресторантът е в центъра на града.|Restoran şehir merkezinde.;Там е уютно.|Orası sıcak ve rahat.;Нашата маса е до прозореца.|Masamız pencere yanında.;Сестра ми седи до майка ми.|Kardeşim annemin yanında.;Ние сме гладни.|Biz açız.'},
+{l:'Сервитьорът носи менюто.|Garson menüyü getirir.;Менюто е голямо.|Menü büyük.;Има супа, салата, риба и пиле.|Çorba, salata, balık, tavuk var.;Има и много десерти.|Çok tatlı da var.;Аз чета менюто.|Menüyü okuyorum.;Всичко изглежда вкусно.|Her şey lezzetli görünüyor.;Изборът е труден.|Seçim zor.'},
+{l:'„Какво искате?” — пита сервитьорът.|«Ne istersiniz?» — garson sorar.;„Аз искам пилешка супа.” — казва майка ми.|«Tavuk çorbası.» — der annem.;Баща ми иска салата и риба.|Babam salata ve balık ister.;Сестра ми иска пиле с картофи.|Kardeşim patatesli tavuk ister.;Аз искам месо с ориз.|Ben et ve pirinç isterim.;И една минерална вода.|Ve bir maden suyu.;„Веднага!” — казва сервитьорът.|«Hemen!» — der garson.'},
+{l:'Храната идва бързо.|Yemek çabuk gelir.;Супата е гореща.|Çorba sıcak.;Рибата е с лимон.|Balık limonlu.;Пилето е много меко.|Tavuk çok yumuşak.;Картофите са вкусни.|Patatesler lezzetli.;Всички ядем много.|Herkes çok yer.;„Приятен апетит!” — казва сервитьорът.|«Afiyet olsun!» — der garson.'},
+{l:'След храната искаме десерт.|Yemekten sonra tatlı isteriz.;Сервитьорът носи сладолед и торта.|Garson dondurma ve pasta getirir.;Тортата е с шоколад.|Pasta çikolatalı.;Сестра ми яде две парчета.|Kardeşim iki parça yer.;Десертът е прекрасен.|Tatlı harika.;Баща ми пие кафе.|Babam kahve içer.;Аз пия сок.|Ben meyve suyu içerim.'},
+{l:'„Сметката, моля!” — казва баща ми.|«Hesap, lütfen!» — der babam.;Сервитьорът носи сметката.|Garson hesabı getirir.;Баща ми гледа сметката.|Babam hesaba bakar.;Цените са добри.|Fiyatlar uygun.;Баща ми плаща с карта.|Babam kartla öder.;Той дава и бакшиш.|Bahşiş de verir.;„Благодарим ви!” — казваме заедно.|«Teşekkürler!» — birlikte deriz.'},
+{l:'Връщаме се у дома.|Eve döneriz.;Всички са доволни.|Herkes memnun.;Храната беше много вкусна.|Yemek çok lezzetliydi.;Сестра ми спи в колата.|Kardeşim arabada uyuyor.;Улицата е тиха и тъмна.|Sokak sessiz ve karanlık.;Луната свети над града.|Ay şehrin üstünde parlıyor.;Ще дойдем отново.|Yine geleceğiz.'}]},
+{id:'s8',bg:'Рожденият ден на Ива',tr:'İva’nın Doğum Günü',tags:'Doğum günü · Sayılar · Renkler',focus:['рожден ден','балони','торта','свещи','подарък','приятелите','танцуват','криеница','желание','изгася','отваря','топка'],scenes:[
+{l:'Днес Ива има рожден ден.|Bugün İva’nın doğum günü.;Ива е на седем години.|İva yedi yaşında.;Тя е много щастлива.|O çok mutlu.;В къщата има балони.|Evde balonlar var.;Балоните са червени, жълти и сини.|Balonlar kırmızı, sarı, mavi.;Майка ѝ прави торта.|Annesi pasta yapıyor.;Баща ѝ носи цветя.|Babası çiçek getiriyor.'},
+{l:'Тортата е голяма и красива.|Pasta büyük ve güzel.;Тортата е с шоколад и ягоди.|Pastada çikolata ve çilek var.;На нея има седем свещи.|Üzerinde yedi mum var.;Ива брои свещите.|İva mumları sayar.;Една, две, три, четири…|Bir, iki, üç, dört…;…пет, шест, седем!|…beş, altı, yedi!;Правилно! Седем свещи.|Doğru! Yedi mum.'},
+{l:'Звънецът звъни.|Zil çalıyor.;Приятелите идват.|Arkadaşlar geliyor.;Мартин носи голям подарък.|Martin büyük hediye getiriyor.;Нина носи цветя.|Nina çiçek getiriyor.;„Честит рожден ден!” — казват те.|«Doğum günün kutlu!» — derler.;Ива ги прегръща.|İva onları kucaklar.;Всички влизат в стаята.|Herkes odaya giriyor.'},
+{l:'Децата играят игри.|Çocuklar oyun oynar.;Те танцуват и пеят.|Dans ediyor, şarkı söylüyorlar.;Мартин е много весел.|Martin çok neşeli.;Нина танцува с Ива.|Nina İva ile dans ediyor.;Те се смеят много.|Çok gülerler.;После играят криеница.|Sonra saklambaç oynarlar.;Забавлението е голямо.|Eğlence büyük.'},
+{l:'Майката носи тортата.|Anne pastayı getiriyor.;Всички пеят песента.|Herkes şarkıyı söylüyor.;Ива прави желание.|İva dilek tutuyor.;Тя изгася свещите.|Mumları üflüyor.;Всички ръкопляскат.|Herkes alkışlıyor.;Тортата е много вкусна.|Pasta çok lezzetli.;Всички искат по едно парче.|Herkes birer parça istiyor.'},
+{l:'Сега Ива отваря подаръците.|Şimdi İva hediyeleri açıyor.;Първият подарък е от Мартин.|İlk hediye Martin’den.;В кутията има топка.|Kutuda top var.;Топката е червена и бяла.|Top kırmızı ve beyaz.;От Нина има книга с приказки.|Nina’dan masal kitabı var.;Ива е много щастлива.|İva çok mutlu.;„Благодаря, приятели!” — казва тя.|«Teşekkürler, arkadaşlar!» — der.'},
+{l:'Вечерта приятелите си тръгват.|Akşam arkadaşlar gidiyor.;„Довиждане!” — казва Ива.|«Hoşça kalın!» — der İva.;Къщата е тиха.|Ev sessiz.;Ива гледа подаръците си.|İva hediyelerine bakıyor.;Тя е щастлива, но уморена.|Mutlu ama yorgun.;Това е най-хубавият рожден ден.|En güzel doğum günü.;Тя заспива с усмивка.|Gülümseyerek uyuyor.'}]},
+{id:'s9',bg:'Дъждовен ден',tr:'Yağmurlu Gün',tags:'Hava · Kıyafet · Sağlık',focus:['вали','дъждобран','чадъра','локви','кихам','боли','температура','лекарят','настинка','лекарство','чай','спира'],scenes:[
+{l:'Събуждам се рано.|Erken uyanırım.;Чувам шума на дъжда.|Yağmurun sesini duyarım.;Навън вали силно.|Dışarıda şiddetli yağıyor.;Небето е тъмно.|Gökyüzü karanlık.;Капките падат по прозореца.|Damlalar pencereye düşüyor.;Днес играта е в къщи.|Bugün oyun evde.;Аз ставам от леглото.|Yataktan kalkıyorum.'},
+{l:'Мама ми показва дрехите.|Annem kıyafetleri gösteriyor.;Това е дъждобран.|Bu yağmurluk.;Той е жълт и светъл.|O sarı ve parlak.;Ето и ботуши.|İşte de çizmeler.;Аз обличам дъждобрана.|Yağmurluğu giyiyorum.;Не забравям шапката.|Şapkayı unutmuyorum.;Мама ми дава чадъра.|Annem şemsiyeyi veriyor.'},
+{l:'Излизаме навън.|Dışarı çıkıyoruz.;Улицата е мокра.|Sokak ıslak.;Има големи локви.|Büyük birikintiler var.;Аз скачам в локвите.|Birikintlere atlıyorum.;Водата пръска навсякъде.|Su her yere sıçrıyor.;Чадърът пази от дъжда.|Şemsiye yağmurdan koruyor.;Мама и аз се смеем.|Annem ve ben gülüyoruz.'},
+{l:'След обяд ми е студено.|Öğleden sonra üşüyorum.;Аз кихам.|Hapşırıyorum.;Кихам много пъти.|Çok kez hapşırıyorum.;Главата ми боли.|Başım ağrıyor.;Гърлото ми боли също.|Boğazım da ağrıyor.;Мама ме докосва по челото.|Annem alnıma dokunuyor.;„Ти имаш температура!” — казва тя.|«Ateşin var!» — der o.'},
+{l:'Мама вика лекаря.|Annem doktoru çağırıyor.;Лекарят идва след час.|Doktor bir saat sonra gelir.;Той има сива чанта.|Onun gri çantası var.;„Здравей! Къде те боли?” — пита лекарят.|«Merhaba! Neren ağrıyor?» — sorar.;„Гърлото и главата.” — отговарям аз.|«Boğaz ve baş.» — derim.;Лекарят гледа гърлото ми.|Doktor boğazıma bakıyor.;„Имаш лека настинка.” — казва той.|«Hafif nezlen var.» — der.'},
+{l:'Лекарят дава лекарство.|Doktor ilaç veriyor.;„Пий топъл чай.” — казва той.|«Ilık çay iç.» — der.;„И си легни рано.”|«Ve erken yat.»;„Скоро ще си здрав!”|«Yakında iyileşirsin!»;Мама дава на лекаря пари.|Annem doktora para veriyor.;„Благодаря, доктор!” — казва мама.|«Teşekkürler, doktor!» — der anne.;Лекарят тръгва в дъжда.|Doktor yağmura gidiyor.'},
+{l:'Аз лежа в леглото.|Yatakta yatıyorum.;Мама ми прави топъл чай.|Annem ılık çay yapıyor.;Чаят е с лимон и мед.|Çay limonlu ve ballı.;Пия чай и четя книга.|Çay içerim, kitap okurum.;Котката спи край мен.|Kedi yanımda uyuyor.;Вечерта ми е по-добре.|Akşam daha iyiyim.;Дъждът спира.|Yağmur duruyor.'}]},
+{id:'s10',bg:'На училище',tr:'Okulda',tags:'Okul · Günler · Arkadaşlık',focus:['училище','учителят','дъската','математика','числа','почивка','приказка','вълка','заека','рисуваме','кораб','учителката'],scenes:[
+{l:'Днес е понеделник.|Bugün pazartesi.;Аз отивам на училище.|Okula gidiyorum.;Училището е близо до дома.|Okul evin yakınında.;Аз вървя с приятеля си Петър.|Arkadaşım Petar’le yürürüm.;Носим раниците.|Sırt çantalarını taşırız.;В раницата има тетрадка.|Çantada defter var.;Дворът е пълен с деца.|Avlu çocuklarla dolu.'},
+{l:'Звънецът звъни.|Zil çalıyor.;Влизаме в класната стая.|Sınıfa giriyoruz.;Учителят е пред дъската.|Öğretmen tahtanın önünde.;Той е господин Иванов.|O Bey İvanov.;„Добро утро, деца!” — казва той.|«Günaydın çocuklar!» — der.;В класа има дванадесет деца.|Sınıfta on iki çocuk var.;Сядаме на местата си.|Yerlerimize otururuz.'},
+{l:'Първият час е математика.|İlk ders matematik.;Учителят пише на дъската.|Öğretmen tahtaya yazar.;Той пише числа.|Sayılar yazar.;„Колко е дванадесет плюс четири?”|«On iki artı dört kaç?»;Аз вдигам ръката.|El kaldırıyorum.;„Шестнайсет!” — отговарям аз.|«On altı!» — derim.;„Правилно!” — учителят се усмихва.|«Doğru!» — öğretmen gülümser.'},
+{l:'След това е почивка.|Sonra teneffüs var.;Децата излизат на двора.|Çocuklar avluya çıkar.;Момчетата играят футбол.|Erkekler futbol oynar.;Момичетата скачат въже.|Kızlar ip atlar.;Петър и аз играем криеница.|Petar ve ben saklambaç.;Звънецът звъни отново.|Zil yine çalıyor.;Връщаме се в класа.|Sınıfa döneriz.'},
+{l:'Вторият час е български език.|İkinci ders Bulgarca.;Днес четем приказка.|Bugün masal okuyoruz.;Приказката е за вълка и заека.|Masal kurt ve tavşan hakkında.;Вълкът е гладен.|Kurt aç.;Заекът е бърз.|Tavşan hızlı.;Учителят задава въпроси.|Öğretmen soru sorar.;Аз отговарям първи.|Ben ilk cevap veririm.'},
+{l:'На обяд ядем в училището.|Öğlen okulda yeriz.;Храната е супа и хляб.|Yemek çorba ve ekmek.;След обяд рисуваме.|Sonra resim çizeriz.;Аз рисувам къща и слънце.|Ev ve güneş çizerim.;Петър рисува море и кораб.|Petar deniz ve gemi çizer.;Учителката хвали рисунките.|Öğretmen çizimleri över.;Ние сме доволни.|Memnunuz.'},
+{l:'Петък е последният учебен ден.|Cuma son okul günü.;След петък идва съботата.|Cuma’dan sonra cumartesi.;В събота нямаме училище.|Cumartesi okul yok.;Петър пита: „Играеш ли футбол?”|Petar sorar: «Futbol oynar mısın?»;„Да, ще играя!” — отговарям аз.|«Evet, oynayacağım!» — derim.;Приятелството е важно.|Arkadaşlık önemli.;Училището е моят втори дом.|Okul ikinci evim.'}]}];
+
+/* ═══ İLLÜSTRASYON — kompakt sahne sistemi ═══ */
+const INK='#3a2f22',RED='#b04a2c',GREEN='#41603f',LG='#7d9464',GOLD='#c8963b',BLUE='#5d7d92',SKIN='#cf9a7e',CREAM='#f2ead4',BR='#8a6a45';
+const R=(x,y,w,h,f,rx=0,op=1)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${f}" opacity="${op}"/>`;
+const C=(x,y,r,f,op=1)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}" opacity="${op}"/>`;
+const E=(x,y,rx,ry,f,op=1)=>`<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${f}" opacity="${op}"/>`;
+const P=(d,f,op=1)=>`<path d="${d}" fill="${f}" opacity="${op}"/>`;
+const L=(x1,y1,x2,y2,st,w=3,op=1)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${st}" stroke-width="${w}" stroke-linecap="round" opacity="${op}"/>`;
+const Pc=(d,st,w=3,op=1)=>`<path d="${d}" fill="none" stroke="${st}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" opacity="${op}"/>`;
+const sky=c=>R(0,0,640,460,c),gnd=(y,c)=>R(0,y,640,460-y,c);
+const tx=(x,y,t,fs,c=CREAM)=>`<text x="${x}" y="${y}" font-size="${fs}" fill="${c}" text-anchor="middle" font-family="Georgia,serif">${t}</text>`;
+function sun(x,y,r,c=GOLD){let s=C(x,y,r,c);for(let i=0;i<8;i++){const a=i*Math.PI/4;s+=L(x+Math.cos(a)*(r+6),y+Math.sin(a)*(r+6),x+Math.cos(a)*(r+15),y+Math.sin(a)*(r+15),c,3)}return s}
+const star4=(x,y,r,c)=>P(`M ${x} ${y-r} L ${x+r*.28} ${y-r*.28} L ${x+r} ${y} L ${x+r*.28} ${y+r*.28} L ${x} ${y+r} L ${x-r*.28} ${y+r*.28} L ${x-r} ${y} L ${x-r*.28} ${y-r*.28} Z`,c);
+const cloud=(x,y,s=1,c='#eef0df')=>C(x-26*s,y,16*s,c)+C(x,y-12*s,22*s,c)+C(x+28*s,y,15*s,c)+R(x-32*s,y-2*s,64*s,14*s,c,8*s);
+const hillP=(x,y,w,h,c)=>P(`M ${x-w/2} ${y} Q ${x} ${y-h*2} ${x+w/2} ${y} Z`,c);
+function windowIn(x,y,w,h,glass='#dcead8',inner=''){return R(x-10,y-10,w+20,h+20,'#a9895c',6)+R(x,y,w,h,glass)+(inner||'')+Pc(`M ${x+w/2} ${y} v ${h} M ${x} ${y+h/2} h ${w}`,'#a9895c',3)}
+function person(x,y,s=1,o={}){const sh=o.shirt||RED,hr=o.hair||'#4a3423';let g='';
+ if(o.dress)g+=R(x-9*s,y-42*s,8*s,42*s,'#4a3a2a',3*s)+R(x+2*s,y-42*s,8*s,42*s,'#4a3a2a',3*s);
+ else g+=R(x-12*s,y-46*s,9*s,46*s,'#4a3a2a',4*s)+R(x+3*s,y-46*s,9*s,46*s,'#4a3a2a',4*s);
+ g+=E(x-9*s,y,12*s,4.5*s,'#3a2c1e')+E(x+9*s,y,12*s,4.5*s,'#3a2c1e');
+ if(o.dress)g+=P(`M ${x-16*s} ${y-102*s} h ${32*s} l ${12*s} ${62*s} h ${-56*s} Z`,sh);else g+=R(x-17*s,y-102*s,34*s,58*s,sh,11*s);
+ const arm=(a,b,c2,d)=>L(a,b,c2,d,sh,7*s)+C(c2,d,4.5*s,SKIN);
+ if(o.arms==='open')g+=arm(x-15*s,y-94*s,x-40*s,y-116*s)+arm(x+15*s,y-94*s,x+40*s,y-116*s);
+ else if(o.arm==='fwd')g+=arm(x-15*s,y-92*s,x-24*s,y-68*s)+arm(x+15*s,y-92*s,x+46*s,y-102*s);
+ else g+=arm(x-15*s,y-94*s,x-24*s,y-64*s)+arm(x+15*s,y-94*s,x+24*s,y-64*s);
+ g+=C(x,y-126*s,20*s,SKIN)+P(`M ${x-20*s} ${y-126*s} a ${20*s} ${20*s} 0 0 1 ${40*s} 0 Z`,hr);
+ if(o.long)g+=R(x-25*s,y-128*s,9*s,42*s,hr,4*s)+R(x+16*s,y-128*s,9*s,42*s,hr,4*s);
+ if(o.bun)g+=C(x,y-150*s,9*s,hr);
+ g+=C(x-7*s,y-126*s,1.9*s,INK)+C(x+7*s,y-126*s,1.9*s,INK);
+ if(o.smile!==false)g+=Pc(`M ${x-5*s} ${y-118*s} Q ${x} ${y-113*s} ${x+5*s} ${y-118*s}`,INK,1.8);
+ return g}
+function personT(x,y,s=1,o={}){const sh=o.shirt||RED,hr=o.hair||'#4a3423';let g='';
+ g+=P(`M ${x-27*s} ${y-70*s} h ${54*s} l ${9*s} ${70*s} h ${-72*s} Z`,sh);
+ g+=C(x,y-88*s,19*s,SKIN)+P(`M ${x-19*s} ${y-88*s} a ${19*s} ${19*s} 0 0 1 ${38*s} 0 Z`,hr);
+ if(o.long)g+=R(x-24*s,y-90*s,9*s,38*s,hr,4*s)+R(x+15*s,y-90*s,9*s,38*s,hr,4*s);
+ if(o.bun)g+=C(x,y-111*s,8*s,hr);
+ g+=C(x-7*s,y-88*s,1.9*s,INK)+C(x+7*s,y-88*s,1.9*s,INK)+Pc(`M ${x-5*s} ${y-80*s} Q ${x} ${y-75*s} ${x+5*s} ${y-80*s}`,INK,1.8);
+ return g}
+function personSit(x,y,s=1,o={}){const sh=o.shirt||RED,hr=o.hair||'#4a3423';let g='';
+ g+=R(x+6*s,y-44*s,10*s,44*s,'#4a3a2a',4*s)+E(x+11*s,y,13*s,4.5*s,'#3a2c1e');
+ g+=R(x-17*s,y-98*s,34*s,56*s,sh,11*s)+R(x-17*s,y-48*s,32*s,12*s,sh,5*s);
+ g+=C(x,y-120*s,19*s,SKIN)+P(`M ${x-19*s} ${y-120*s} a ${19*s} ${19*s} 0 0 1 ${38*s} 0 Z`,hr);
+ g+=C(x-7*s,y-120*s,1.9*s,INK)+C(x+7*s,y-120*s,1.9*s,INK)+Pc(`M ${x-5*s} ${y-112*s} Q ${x} ${y-107*s} ${x+5*s} ${y-112*s}`,INK,1.8);
+ return g}
+function personRun(x,y,s=1,o={}){const sh=o.shirt||RED,hr=o.hair||'#4a3423';let g='';
+ g+=L(x-2*s,y-46*s,x-30*s,y-2*s,'#4a3a2a',9*s)+L(x+4*s,y-46*s,x+24*s,y-10*s,'#4a3a2a',9*s)+E(x-32*s,y-2*s,12*s,4.5*s,'#3a2c1e')+E(x+26*s,y-10*s,12*s,4.5*s,'#3a2c1e');
+ g+=P(`M ${x-13*s} ${y-104*s} h ${30*s} l ${7*s} ${60*s} h ${-44*s} Z`,sh)+L(x-12*s,y-96*s,x-36*s,y-74*s,sh,7*s)+C(x-36*s,y-74*s,4.5*s,SKIN)+L(x+14*s,y-96*s,x+34*s,y-122*s,sh,7*s)+C(x+34*s,y-122*s,4.5*s,SKIN);
+ g+=C(x+4*s,y-124*s,19*s,SKIN)+P(`M ${x-15*s} ${y-124*s} a ${19*s} ${19*s} 0 0 1 ${38*s} 0 Z`,hr)+C(x,y-124*s,1.9*s,INK)+C(x+13*s,y-124*s,1.9*s,INK)+E(x+11*s,y-114*s,4*s,5*s,'#8a4a3a');
+ return g}
+function dog(x,y,s=1,body='#a9764c',mark='#f2ead4'){return Pc(`M ${x-42*s} ${y-40*s} Q ${x-62*s} ${y-54*s} ${x-54*s} ${y-74*s}`,body,7*s)+R(x-34*s,y-26*s,8*s,28*s,body,3*s)+R(x-16*s,y-26*s,8*s,28*s,body,3*s)+R(x+12*s,y-26*s,8*s,28*s,body,3*s)+R(x+28*s,y-26*s,8*s,28*s,body,3*s)+E(x,y-36*s,44*s,23*s,body)+E(x-6*s,y-46*s,12*s,8*s,mark,.9)+C(x+52*s,y-56*s,18*s,body)+P(`M ${x+40*s} ${y-70*s} q ${-9*s} ${15*s} ${-3*s} ${19*s} l ${13*s} ${-4*s} Z`,'#7d5537')+C(x+58*s,y-60*s,2.6*s,INK)+C(x+67*s,y-51*s,3.6*s,INK)}
+function house(x,y,w,h,wall,roof){return P(`M ${x-16} ${y-h} L ${x+w/2} ${y-h-46} L ${x+w+16} ${y-h} Z`,roof)+R(x,y-h,w,h,wall)+R(x+w/2-15,y-50,30,50,'#7a5a38',4)+C(x+w/2+8,y-26,2.6,GOLD)+R(x+14,y-h+26,32,32,'#dcead8',3)+Pc(`M ${x+30} ${y-h+26} v 32 M ${x+14} ${y-h+42} h 32`,wall,2)+R(x+w-42,y-h-32,16,28,'#8a7350',2)}
+function tree(x,y,s=1,leaf=LG,l2='#8fae76'){return R(x-8*s,y-64*s,16*s,64*s,BR,5*s)+C(x,y-98*s,36*s,leaf)+C(x-30*s,y-72*s,26*s,l2)+C(x+30*s,y-72*s,26*s,leaf)}
+function tableF(x,y,w,h,c=BR,leg=72){return R(x,y,w,h,c,5)+R(x+12,y+h,14,leg,'#7a5a38',3)+R(x+w-26,y+h,14,leg,'#7a5a38',3)}
+function cup(x,y,s=1,c=CREAM){return E(x,y-1*s,20*s,4*s,'#e0d5b8')+R(x-12*s,y-16*s,24*s,15*s,c,6*s)+Pc(`M ${x+12*s} ${y-13*s} q ${10*s} ${2*s} 0 ${9*s}`,'#b9ad90',3)+Pc(`M ${x-3*s} ${y-22*s} q ${5*s} ${-7*s} 0 ${-13*s} q ${-4*s} ${-6*s} 0 ${-11*s}`,'#c4b896',2)}
+function bread(x,y,s=1){return E(x,y,26*s,13*s,'#d8a75a')+E(x,y-2*s,18*s,7*s,'#e8c887')+L(x-10*s,y-9*s,x-4*s,y-12*s,'#b9853e',2)+L(x,y-10*s,x+6*s,y-13*s,'#b9853e',2)}
+function tomato(x,y,r=13){return C(x,y,r,'#c14a2e')+P(`M ${x-7} ${y-r+3} l 7 -7 l 7 7 l -7 4 Z`,'#5d8a4a')}
+function apple(x,y,r=13,c='#8fae5e'){return C(x,y,r,c)+L(x,y-r,x+4,y-r-9,'#6b4f30',3)+E(x+11,y-r-5,7,4,LG)}
+function melonHalf(x,y,r){return P(`M ${x-r-8} ${y} A ${r+8} ${r+8} 0 0 1 ${x+r+8} ${y} Z`,'#5d8a4a')+P(`M ${x-r} ${y} A ${r} ${r} 0 0 1 ${x+r} ${y} Z`,'#d96a52')+C(x-6,y-6,2,INK)+C(x+5,y-9,2,INK)+C(x+12,y-4,2,INK)}
+function jar(x,y,s=1,c=GOLD){return R(x-14*s,y-32*s,28*s,32*s,c,5*s,.92)+R(x-16*s,y-40*s,32*s,10*s,BR,3*s)+E(x,y-14*s,9*s,5*s,CREAM,.75)}
+function bookO(x,y,s=1){return P(`M ${x} ${y-4} C ${x-28} ${y-18} ${x-48} ${y-13} ${x-56} ${y-7} L ${x-56} ${y+13} C ${x-40} ${y+5} ${x-14} ${y+7} ${x} ${y+13} C ${x+14} ${y+7} ${x+40} ${y+5} ${x+56} ${y+13} L ${x+56} ${y-7} C ${x+48} ${y-13} ${x+28} ${y-18} ${x} ${y-4} Z`,CREAM)+L(x,y-4,x,y+13,'#c4b896',2)}
+function fenceF(x,y,w,n=7,c='#efe5cb'){let s='';const st=w/n;for(let i=0;i<=n;i++)s+=R(x+i*st-5,y-36,10,36,c,4);return s+R(x,y-28,w,6,'#e6dcc2',3)+R(x,y-11,w,6,'#e6dcc2',3)}
+function tent(x,y,w,h,c1=RED,c2=CREAM){let s='';const n=Math.max(3,Math.round(w/68)),sw=w/n;for(let i=0;i<n;i++)s+=P(`M ${x+i*sw} ${y} h ${sw} V ${y+h} l ${-sw/2} ${-11} l ${-sw/2} ${11} Z`,i%2?c2:c1);return s}
+function scaleF(x,y){return R(x-34,y-6,68,8,BR,3)+R(x-4,y-58,8,54,'#6b4f30')+C(x,y-66,18,CREAM)+`<circle cx="${x}" cy="${y-66}" r="18" fill="none" stroke="${INK}" stroke-width="3"/>`+L(x,y-66,x+10,y-73,INK,2)+R(x-30,y-30,60,6,'#a9895c',2)+L(x,y-30,x,y-48,'#6b4f30',4)}
+function bedF(x,y,w,blanket,hair='#5a4030',awake=false){return R(x-8,y-120,14,120,BR,4)+R(x,y-44,w,44,'#9a7a4e',6)+E(x+40,y-52,32,15,CREAM)+R(x+72,y-64,w-90,36,blanket,10)+C(x+86,y-70,16,SKIN)+P(`M ${x+70} ${y-70} a 16 16 0 0 1 32 0 Z`,hair)+(awake?C(x+82,y-70,1.8,INK)+C(x+90,y-70,1.8,INK):L(x+79,y-70,x+84,y-70,INK,1.6)+L(x+88,y-70,x+93,y-70,INK,1.6))+R(x+w-8,y-72,8,72,BR,3)}
+function rug(x,y,rx,c){return E(x,y,rx,rx*.2,c)+E(x,y,rx*.7,rx*.14,c==='#c9a563'?'#d4b57e':'#8a94a8')}
+function flowersVase(x,y){return R(x-28,y,56,52,'#9aa5a8',4)+R(x-30,y-4,60,8,'#8a9498')+L(x-16,y-2,x-26,y-52,LG,4)+L(x,y-2,x,y-58,LG,4)+L(x+16,y-2,x+27,y-50,LG,4)+C(x-26,y-58,10,RED)+C(x,y-64,11,RED)+C(x+27,y-56,10,RED)+C(x-13,y-54,9,'#c96a4e')+C(x+14,y-52,9,'#c96a4e')+C(x-26,y-58,3,GOLD)+C(x,y-64,3,GOLD)+C(x+27,y-56,3,GOLD)}
+function saladBowl(x,y,s=1){return E(x,y,42*s,15*s,'#c96f4a')+P(`M ${x-42*s} ${y} A ${42*s} ${18*s} 0 0 0 ${x+42*s} ${y} Z`,'#a95a3c')+E(x-14*s,y-6*s,14*s,7*s,LG)+E(x+8*s,y-8*s,16*s,8*s,'#8fae76')+E(x+26*s,y-4*s,10*s,5*s,'#a9bd8f')}
+const ht=(x,y,s,c=RED)=>P(`M ${x} ${y+8*s} C ${x-12*s} ${y-2*s} ${x-9*s} ${y-13*s} ${x} ${y-6*s} C ${x+9*s} ${y-13*s} ${x+12*s} ${y-2*s} ${x} ${y+8*s} Z`,c);
+const bl=(x,y,s,c)=>E(x,y,11*s,14*s,c)+P(`M ${x-3*s} ${y+13*s} h ${6*s} l ${-3*s} ${5*s} Z`,c)+Pc(`M ${x} ${y+18*s} q ${6*s} ${10*s} ${-1*s} ${24*s}`,'#8a7a5a',2);
+const rn=(n,op=.55)=>{let s='';for(let i=0;i<n;i++)s+=L((i*67)%610+15,(i*131)%400+12,(i*67)%610+8,(i*131)%400+30,'#7f9fae',2.6,op);return s};
+const sn=(n,op=.95)=>{let s='';for(let i=0;i<n;i++)s+=C((i*73)%615+12,(i*127)%405+12,2.6,'#fdfdf8',op);return s};
+function swm(x,y,s=1){return C(x,y-26*s,27*s,'#fdfdf6')+C(x,y-64*s,20*s,'#fdfdf6')+C(x,y-94*s,14*s,'#fdfdf6')+R(x-16*s,y-107*s,32*s,7*s,BR,3)+R(x-10*s,y-122*s,20*s,15*s,BR,3)+C(x-4.5*s,y-96*s,1.9*s,INK)+C(x+4.5*s,y-96*s,1.9*s,INK)+P(`M ${x-1*s} ${y-92*s} L ${x+18*s} ${y-88*s} L ${x-1*s} ${y-85*s} Z`,GOLD)+Pc(`M ${x-4*s} ${y-87*s} q ${4*s} ${4*s} ${8*s} ${1*s}`,INK,1.5)+C(x,y-66*s,2.4*s,INK)+C(x,y-57*s,2.4*s,INK)+L(x-19*s,y-66*s,x-36*s,y-52*s,BR,4*s)+L(x+19*s,y-66*s,x+36*s,y-54*s,BR,4*s)}
+function ck(x,y,s=1,cand=7,fl=true){let g=R(x-58*s,y-38*s,116*s,38*s,'#e6bd7e',6*s)+R(x-42*s,y-64*s,84*s,26*s,'#f2dcab',6*s)+Pc(`M ${x-42*s} ${y-58*s} q ${8*s} ${9*s} ${16*s} 0 q ${9*s} ${9*s} ${18*s} 0 q ${9*s} ${9*s} ${18*s} 0 q ${9*s} ${9*s} ${18*s} 0`,'#d97a5a',5*s);for(let i=0;i<cand;i++){const cx=x-30*s+i*(60*s/(cand-1||1));g+=R(cx-2*s,y-86*s,4*s,20*s,'#b04a2c',2*s)+(fl?E(cx,y-92*s,3.5*s,6*s,GOLD):'')}return g}
+const gf=(x,y,w,h,c,rib)=>R(x-w/2,y-h,w,h,c,3)+R(x-3,y-h,6,h,rib)+E(x-9,y-h,9,5,rib)+E(x+9,y-h,9,5,rib);
+function um(x,y,s=1,c=BLUE){return P(`M ${x-42*s} ${y-12*s} Q ${x} ${y-74*s} ${x+42*s} ${y-12*s} Z`,c)+Pc(`M ${x-42*s} ${y-12*s} q ${10.5*s} ${11*s} ${21*s} 0 q ${10.5*s} ${11*s} ${21*s} 0 q ${10.5*s} ${11*s} ${21*s} 0 q ${10.5*s} ${11*s} ${21*s} 0`,'#f2ead4',3*s)+L(x,y-70*s,x,y+28*s,'#6b4f30',4*s)+Pc(`M ${x} ${y+28*s} q ${8*s} ${7*s} 0 ${15*s}`,'#6b4f30',3*s)}
+const wv=(y,c)=>{let s=R(0,y,640,460-y,c);for(let i=0;i<8;i++)s+=Pc(`M ${i*82-8} ${y+16} q 20 -9 41 0 q 20 9 41 0`,'#dfeee9',3,.5);return s};
+function bd(x,y,w,h){return R(x-7,y-7,w+14,h+14,'#8a6a45',5)+R(x,y,w,h,'#3f5548',2)}
+const dk=(x,y,s=1)=>R(x-32*s,y-5*s,64*s,8*s,BR,3)+R(x-26*s,y+3*s,6*s,20*s,'#7a5a38')+R(x+20*s,y+3*s,6*s,20*s,'#7a5a38');
+const cr=(x,y,s,c=RED)=>R(x-s*.32,y-s,.64*s,2*s,c,2)+R(x-s,y-.32*s,2*s,.64*s,c,2);
+function catF(x,y,s=1,c='#8a8577'){return E(x,y-11*s,20*s,10*s,c)+C(x+15*s,y-20*s,10*s,c)+P(`M ${x+8*s} ${y-27*s} l ${3*s} ${-8*s} l ${6*s} ${5*s} Z`,c)+P(`M ${x+19*s} ${y-28*s} l ${6*s} ${-5*s} l ${1*s} ${8*s} Z`,c)+C(x+13*s,y-21*s,1.7*s,INK)+C(x+19*s,y-21*s,1.7*s,INK)}
+const brd=(x,y,s,c=RED)=>Pc(`M ${x-11*s} ${y} q ${5.5*s} ${-9*s} ${11*s} 0 q ${5.5*s} ${-9*s} ${11*s} 0`,c,3*s);
+function shp(x,y,s=1){return P(`M ${x-32*s} ${y-8*s} h ${64*s} l ${-11*s} ${13*s} h ${-42*s} Z`,BR)+R(x-7*s,y-36*s,14*s,28*s,CREAM)+P(`M ${x-4*s} ${y-36*s} L ${x-4*s} ${y-56*s} L ${x+26*s} ${y-38*s} Z`,RED)}
+const duckF=(x,y,s=1)=>E(x,y-7*s,15*s,9.5*s,'#f0d878')+C(x+13*s,y-17*s,7.5*s,'#f0d878')+P(`M ${x+19*s} ${y-18*s} l ${8*s} ${2*s} l ${-8*s} ${3*s} Z`,GOLD)+C(x+14*s,y-19*s,1.5*s,INK);
+const lf=(x,y,c)=>E(x,y,6,3.5,c)+L(x-4,y+2.5,x+4,y-2.5,'#8a6a45',1.5);
+const mn=(x,y,r,c='#2f3a4d')=>C(x,y,r,CREAM)+C(x+r*.5,y-r*.28,r*.85,c);
+const fsh=(x,y,s=1,c='#6b8fa3')=>E(x,y,16*s,8.5*s,c)+P(`M ${x+14*s} ${y} l ${11*s} ${-8*s} v ${16*s} Z`,c)+C(x-8*s,y-2*s,1.9*s,INK);
+function cowF(x,y,s=1){return E(x,y,26*s,15*s,'#8a6a52')+C(x+24*s,y-12*s,11*s,'#8a6a52')+E(x-8*s,y-8*s,9*s,7*s,CREAM)+E(x+6*s,y+2*s,8*s,6*s,CREAM)+L(x-14*s,y+13*s,x-14*s,y+24*s,'#6b4f30',4*s)+L(x-4*s,y+14*s,x-4*s,y+24*s,'#6b4f30',4*s)+L(x+10*s,y+14*s,x+10*s,y+24*s,'#6b4f30',4*s)+C(x+28*s,y-14*s,1.8*s,INK)+P(`M ${x+30*s} ${y-10*s} l ${9*s} ${2*s} l ${-8*s} ${3*s} Z`,SKIN)}
+const clk=(x,y,r)=>C(x,y,r,CREAM)+`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${INK}" stroke-width="3"/>`+L(x,y,x,y-r+7,INK,3)+L(x,y,x+r*.55,y+r*.3,INK,3);
+const bll=(x,y,r,c)=>C(x,y,r,c)+Pc(`M ${x-r} ${y} A ${r} ${r} 0 0 1 ${x+r} ${y}`,'#f2ead4',3,.8)+Pc(`M ${x-r*.5} ${y-r*.85} A ${r} ${r} 0 0 1 ${x+r*.5} ${y-r*.85}`,'#f2ead4',3,.8);
+const pl8=(x,y,rx)=>E(x,y,rx,rx*.24,'#e6dcc2')+E(x,y,rx*.72,rx*.17,'#fbf6e9');
+const bagF=(x,y,c='#8a94a8')=>R(x-17,y-20,34,20,c,4)+Pc(`M ${x-8} ${y-20} q 8 -12 16 0`,'#5a5a5a',3.5);
+function trF(x,y,w,c=RED){return R(x,y-62,w,62,c,10)+R(x+14,y-46,w-70,26,'#dcead8',4)+R(x+w-46,y-46,26,26,'#dcead8',4)+C(x+w*.28,y,13,INK)+C(x+w*.72,y,13,INK)+L(x-30,y+16,x+w+30,y+16,'#6b4f30',5)}
+function carF(x,y,w,c=BLUE){return P(`M ${x-w/2} ${y} h ${w} v ${-16} l ${-w*.18} ${-16} h ${-w*.5} l ${-w*.16} ${16} Z`,c)+R(x-w*.28,y-30,w*.36,14,'#dcead8',3)+C(x-w*.28,y,10,INK)+C(x+w*.28,y,10,INK)}
+function rb(x,y,r){return Pc(`M ${x-r} ${y} A ${r} ${r} 0 0 1 ${x+r} ${y}`,'#c14a2e',7)+Pc(`M ${x-r+9} ${y} A ${r-9} ${r-9} 0 0 1 ${x+r-9} ${y}`,'#e8c95e',7)+Pc(`M ${x-r+18} ${y} A ${r-18} ${r-18} 0 0 1 ${x+r-18} ${y}`,'#5d8a4a',7)+Pc(`M ${x-r+27} ${y} A ${r-27} ${r-27} 0 0 1 ${x+r-27} ${y}`,'#5d7d92',7)}
+const noteF=(x,y,c=INK)=>C(x-4,y+4,4.5,c)+L(x,y+2,x,y-14,c,2.5)+Pc(`M ${x} ${y-14} q 8 2 9 8`,c,2.5);
+const splashF=(x,y,c='#7f9fae')=>Pc(`M ${x-16} ${y} q 6 -12 12 -2 M ${x} ${y-2} q 6 -14 12 -2 M ${x-8} ${y+4} q 8 -10 16 0`,c,3);
+const bts=(x,y,c=GOLD)=>R(x-14,y-14,12,14,c,3)+R(x-16,y-4,16,5,c,2)+R(x+4,y-14,12,14,c,3)+R(x+2,y-4,16,5,c,2);
+const bpF=(x,y,c)=>R(x-8,y-16,16,22,c,4)+R(x-6,y-20,12,7,c,3);
+const castF=(x,y,s=1)=>R(x-30*s,y-34*s,24*s,34*s,GOLD,3)+R(x+6*s,y-34*s,24*s,34*s,GOLD,3)+R(x-12*s,y-52*s,24*s,52*s,'#e0b45c',3)+Pc(`M ${x-30*s} ${y-34*s} q 12 -10 24 0 M ${x+6*s} ${y-34*s} q 12 -10 24 0 M ${x-12*s} ${y-52*s} q 12 -10 24 0`,'#f2ead4',3);
+const shelf=(x,y,w,rows=3)=>{const cols=[RED,GOLD,GREEN,BLUE,'#c96f4a','#8a94a8'];let s=R(x-14,y-12,w+28,rows*74+24,BR,8);for(let j=0;j<rows;j++){s+=R(x,y+j*74,w,10,'#6b4f30',3);for(let i=0;i<Math.floor(w/22);i++)s+=R(x+2+i*22,y-52+j*74,16,52,cols[(i+j)%6])}return s};
+const granny=(x,y,s=1,c=RED)=>person(x,y,s,{dress:1,shirt:c,long:1,hair:'#cfc6b4',bun:1});
+const girl=(x,y,s=.8,c=GOLD)=>person(x,y,s,{dress:1,shirt:c,long:1,hair:'#8a6a45'});
+const boy=(x,y,s=.85,c=GOLD)=>person(x,y,s,{shirt:c,hair:'#4a3423'});
+
+const ILLO={
+'s1-0':()=>sky('#efe3c4')+gnd(392,'#d8c69c')+windowIn(84,98,172,212,'#dcead8',sun(150,168,22)+hillP(110,296,180,40,'#a9bd8f'))+R(66,90,20,238,'#c9826a',4)+R(254,90,20,238,'#c9826a',4)+bedF(352,362,240,'#7d94a4')+rug(250,424,130,'#c9a563')+clk(540,120,34),
+'s1-1':()=>sky('#ece0c0')+gnd(392,'#d8c69c')+E(210,190,70,94,'#a9895c')+E(210,190,56,80,'#dcead8')+C(210,176,14,SKIN)+P('M 196 176 a 14 14 0 0 1 28 0 Z','#4a3423')+R(330,300,116,84,BR,6)+R(322,290,132,12,'#a9895c',4)+jar(392,288,1)+L(478,150,604,150,BR,5)+R(514,150,28,84,'#c9826a',4)+R(552,150,28,84,'#c9d6c5',4)+person(180,410,1,{dress:1,shirt:BLUE,long:1}),
+'s1-2':()=>sky('#f0e5c7')+gnd(396,'#d8c69c')+windowIn(440,86,140,140,'#dcead8',sun(505,140,16))+tableF(140,306,360,24)+cup(232,296,1.1)+bread(330,292)+bread(366,296,.9)+P('M 292 306 h 48 l -24 -24 Z','#e8c95e')+jar(438,298,1)+R(84,238,12,158,BR,4)+R(84,330,66,12,BR,4),
+'s1-3':()=>sky('#dee6d3')+sun(74,84,22)+hillP(180,322,320,50,'#b9c49a')+gnd(340,'#b0a689')+R(0,388,640,72,'#a39a80')+R(36,176,150,166,'#d8c9a0')+P('M 24 176 L 111 128 L 198 176 Z','#b0705a')+R(118,258,324,90,RED,12)+R(140,272,52,34,'#e8efdf',6)+R(204,272,52,34,'#e8efdf',6)+R(268,272,52,34,'#e8efdf',6)+R(380,272,44,34,'#e8efdf',6)+C(178,352,21,INK)+C(368,352,21,INK)+L(452,180,452,392,'#6b5636',6)+R(400,178,112,40,GREEN,4)+girl(528,406,.98,BLUE)+boy(588,408,.9,'#8a6a45'),
+'s1-4':()=>sky('#ece1c4')+gnd(398,'#d8c69c')+shelf(72,140,500)+tableF(180,318,290,22)+bookO(322,316,1.1)+girl(118,416,1,RED)+boy(536,416,.8,GREEN)+R(508,352,26,36,RED,3),
+'s1-5':()=>sky('#efe4c6')+gnd(398,'#d8c69c')+windowIn(396,88,200,196,'#dcead8',sun(470,150,18))+R(108,104,74,58,'#a9895c',4)+P('M 112 156 Q 145 128 178 156 Z',LG)+C(160,124,7,GOLD)+E(300,336,120,24,BR)+R(292,346,16,60,'#7a5a38',3)+cup(262,324)+cup(340,324)+R(296,308,16,18,'#c9d6c5',3)+personT(212,336,1,{dress:1,shirt:BLUE,long:1})+personT(396,336,1,{shirt:'#6b7a4a'}),
+'s1-6':()=>sky('#2f3a4d')+gnd(394,'#242c3a')+R(72,80,190,222,'#1c2637',6)+C(132,142,21,'#e8d9a0')+C(140,134,17,'#1c2637')+star4(220,120,6,'#e8d9a0')+star4(190,180,4,'#e8d9a0')+star4(240,230,5,'#e8d9a0')+bedF(340,364,244,'#5d7d92','#5a4030',true)+bookO(470,318,.7)+mn(560,110,26)+rug(280,424,120,'#3a4658'),
+'s2-0':()=>sky('#dee6d3')+sun(84,86,22)+cloud(320,78)+gnd(332,'#b9c49a')+house(400,332,176,122,'#e0cf9e',RED)+tree(84,346)+fenceF(200,382,190,6)+E(348,438,22,8,RED)+E(348,436,14,5,GOLD)+boy(250,422,.85)+E(296,376,16,6,CREAM)+dog(436,448,.9),
+'s2-1':()=>sky('#dee6d3')+sun(84,86,22)+cloud(320,78)+gnd(332,'#b9c49a')+house(400,332,176,122,'#e0cf9e',RED)+tree(84,346)+fenceF(200,382,190,6)+E(348,438,22,8,RED)+person(300,422,.85,{shirt:GOLD,arms:'open'}),
+'s2-2':()=>sky('#dee6d3')+cloud(150,80)+cloud(500,100,.9)+gnd(346,'#b0a689')+R(0,398,640,62,'#9a9179')+house(20,336,150,104,'#e0cf9e','#7d8a63')+house(468,342,150,100,'#d8c9a0',RED)+R(300,244,10,116,'#6b5636')+R(392,244,10,116,'#6b5636')+R(294,234,114,14,GREEN,4)+person(362,414,1,{dress:1,shirt:GREEN,long:1,hair:'#a9a196'})+R(392,338,18,24,'#7a5a38',4)+person(258,412,.8,{shirt:GOLD,arms:'open'}),
+'s2-3':()=>sky('#dee6d3')+cloud(200,70)+gnd(336,'#b9c49a')+tree(70,350)+tree(582,356,.9)+P('M 452 246 L 512 382 L 538 382 L 484 246 Z',RED)+R(434,232,64,14,BR,4)+L(438,247,438,382,'#6b4f30',4)+L(458,247,458,382,'#6b4f30',4)+L(478,247,478,382,'#6b4f30',4)+boy(362,398,.7,BLUE)+person(414,402,.68,{shirt:'#c96f4a'})+boy(152,418,.85),
+'s2-4':()=>sky('#dee6d3')+cloud(130,70)+cloud(470,84,.9)+gnd(328,'#aebd8a')+wv(392,'#7f9fae')+tree(112,342,1.1)+C(210,330,18,LG)+dog(430,352,.82,'#3a3a3a','#5a5a5a')+personSit(238,420,.92,{shirt:GOLD}),
+'s2-5':()=>sky('#dee6d3')+cloud(500,70)+gnd(322,'#aebd8a')+L(120,226,120,312,'#6b4f30',6)+L(520,226,520,312,'#6b4f30',6)+R(56,206,528,20,BR,6)+R(88,228,464,80,'#57493a')+dog(320,300,.78)+gnd(312,'#6b5f4a')+personRun(140,440,.9,{shirt:GOLD}),
+'s2-6':()=>sky('#dee6d3')+cloud(140,74)+gnd(344,'#b0a689')+R(0,404,640,56,'#9a9179')+house(286,344,250,152,'#e0cf9e',RED)+person(238,416,1,{dress:1,shirt:GREEN,long:1,hair:'#6b5636'})+boy(168,420,.85)+E(88,444,18,6,'#5d7d92')+E(88,442,12,4,'#a9c3ce')+dog(60,436,.62),
+'s3-0':()=>sky('#efe3c4')+gnd(396,'#d8c69c')+windowIn(84,108,150,160,'#dcead8',sun(158,168,16))+R(452,118,126,278,'#d8c9a0',4)+P('M 452 118 L 412 132 L 412 396 L 452 396 Z','#e6dcc2')+C(436,262,4,BR)+R(196,138,94,10,BR,4)+R(212,148,58,92,GREEN,6)+granny(300,416)+girl(378,418,.8)+R(436,372,26,36,BR,4),
+'s3-1':()=>sky('#efe4c6')+gnd(402,'#d8c69c')+tent(16,44,608,36)+R(118,150,404,250,BR,8)+R(132,164,376,222,'#f4ecd6',4)+R(132,262,376,9,'#c9b183')+R(132,326,376,9,'#c9b183')+bread(196,244)+bread(246,246,.9)+bread(294,244,1.05)+bread(210,308,1.1)+bread(262,310,.95)+`<circle cx="392" cy="298" r="16" fill="none" stroke="#d8a75a" stroke-width="10"/><circle cx="452" cy="298" r="16" fill="none" stroke="#c8963b" stroke-width="10"/>`+granny(244,418)+girl(322,420,.8),
+'s3-2':()=>sky('#e9e2c8')+gnd(326,'#b0a689')+tent(60,34,520,40)+tableF(120,306,400,24)+R(120,330,400,54,'#c96f4a',4)+R(148,266,110,36,'#a9895c',4)+tomato(172,266)+tomato(202,262,12)+tomato(232,266)+R(274,266,110,36,'#a9895c',4)+tomato(298,266)+tomato(328,262,12)+tomato(358,266)+E(448,288,26,12,LG)+E(470,296,22,10,'#8fae76')+scaleF(548,306)+personT(320,306,.95,{shirt:'#6b7a4a'})+granny(176,434)+girl(256,436,.8)+C(552,438,7,GOLD)+C(570,444,7,GOLD),
+'s3-3':()=>sky('#e9e2c8')+gnd(326,'#b0a689')+tent(60,34,520,40,GOLD,CREAM)+tableF(120,306,400,24)+R(120,330,400,54,'#c96f4a',4)+apple(180,290)+apple(212,284)+apple(244,290)+apple(196,278)+apple(228,276)+E(376,290,46,30,'#5d8a4a')+Pc('M 340 282 q 36 -16 72 0 M 334 292 q 42 -18 84 0','#4a6b3c',4)+melonHalf(482,306,34)+personT(320,306,.95,{shirt:'#6b7a4a'})+person(200,434,.8,{shirt:GOLD,arm:'fwd'})+granny(132,436),
+'s3-4':()=>sky('#e9e2c8')+gnd(326,'#b0a689')+tent(60,34,520,40,GREEN,CREAM)+tableF(120,306,400,24)+R(120,330,400,54,'#c96f4a',4)+R(172,262,96,46,CREAM,6)+E(220,262,48,11,'#fbf6e9')+Pc('M 190 284 h 60 M 196 296 h 48','#d8cca8',2)+jar(322,304,1.1)+jar(374,304,.95)+E(452,272,11,26,BR)+L(452,298,452,318,BR,5)+personT(320,306,.95,{shirt:'#6b7a4a',long:1})+person(196,434,.8,{shirt:GOLD,arm:'fwd'})+granny(130,436),
+'s3-5':()=>sky('#e9e2c8')+gnd(322,'#b0a689')+tent(60,34,520,40,'#c9826a',CREAM)+tableF(120,306,400,24)+R(120,330,400,54,'#c96f4a',4)+flowersVase(190,262)+flowersVase(300,262)+R(372,262,56,50,'#9aa5a8',4)+R(370,258,60,8,'#8a9498')+C(400,208,9,CREAM)+L(400,260,400,214,LG,4)+personT(320,306,.95,{shirt:'#6b7a4a'})+person(420,434,.8,{shirt:GOLD,arm:'fwd'})+C(474,380,8,RED)+L(476,388,478,412,LG,3)+granny(330,436),
+'s3-6':()=>sky('#dee6d3')+sun(76,80,22)+gnd(336,'#b9c49a')+tree(560,352)+E(300,336,124,24,BR)+R(292,346,16,58,'#7a5a38',3)+saladBowl(246,322)+melonHalf(376,324,30)+R(300,308,14,18,'#c9d6c5',3)+personT(206,336,1,{dress:1,shirt:RED,long:1,hair:'#cfc6b4',bun:1})+personT(398,336,.8,{shirt:GOLD})+C(150,150,3,'#c9826a')+C(470,120,4,'#c9826a'),
+'s4-0':()=>sky('#efe3c4')+gnd(392,'#d8c69c')+windowIn(70,96,140,170,'#dcead8',hillP(120,236,150,28,'#a9bd8f'))+R(250,150,110,80,'#a9895c',5)+R(262,162,86,56,'#f2ead4')+C(305,190,19,SKIN)+P('M 286 190 a 19 19 0 0 1 38 0 Z','#cfc6b4')+person(120,412,.9,{dress:1,shirt:RED,long:1})+person(196,408,1.05,{shirt:GREEN,hair:'#3a2c1e'})+boy(430,414,.5)+person(486,410,.62,{dress:1,shirt:BLUE,long:1})+ht(300,320,1.6)+ht(352,300,1.2)+ht(392,330,1),
+'s4-1':()=>sky('#ece1c4')+gnd(390,'#d8c69c')+R(80,180,220,210,'#f2ead4',6)+P('M 68 180 L 190 122 L 312 180 Z','#c9826a')+cr(190,150,16)+R(120,240,44,44,'#dcead8',3)+R(216,240,44,44,'#dcead8',3)+R(168,300,44,90,'#7a5a38',3)+person(460,410,1,{shirt:'#f4f0e6',long:1,hair:'#8a8577'})+cr(460,322,9)+R(540,356,44,34,'#5d3a2e',4)+cr(562,372,7),
+'s4-2':()=>sky('#dee6d3')+sun(84,86,22)+cloud(320,78)+gnd(336,'#b9c49a')+gnd(400,'#aebd8a')+R(150,392,340,9,'#f2ead4',4)+person(300,392,1.05,{shirt:GREEN,hair:'#3a2c1e',arm:'fwd'})+bll(372,352,20,CREAM)+boy(430,404,.62),
+'s4-3':()=>sky('#ece1d0')+gnd(392,'#d8c69c')+R(60,80,520,240,'#c9d6e2',8)+R(90,120,90,110,'#f2ead4',4)+P('M 100 210 Q 135 170 170 210 Z',LG)+sun(150,150,11)+bedF(400,352,190,'#b8839a','#6b4f30')+bll(200,388,14,'#c96f4a')+R(96,330,60,44,BR,5)+R(104,318,44,13,BR,3)+ht(300,300,1.3),
+'s4-4':()=>sky('#efe4c6')+sun(560,80,24)+cloud(300,72)+gnd(330,'#b9c49a')+gnd(396,'#aebd8a')+house(360,340,180,130,'#e6dcc2','#b0705a')+tree(90,352,1.05,'#a9bd8f')+C(84,300,7,'#c14a2e')+C(110,290,7,'#c14a2e')+C(240,320,8,RED)+C(258,314,8,'#c96a4e')+L(240,330,240,352,LG,3)+L(258,324,258,352,LG,3)+person(200,416,.95,{dress:1,shirt:'#8a94a8',long:1,hair:'#cfc6b4',bun:1})+person(280,412,1,{shirt:'#6b7a4a',hair:'#b0a89a'}),
+'s4-5':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+windowIn(430,90,150,150,'#dcead8',sun(505,150,14))+personT(190,336,1,{dress:1,shirt:RED,long:1,hair:'#6b5636'})+personT(250,336,.85,{shirt:GOLD})+personT(390,336,.9,{dress:1,shirt:BLUE,long:1})+personT(452,336,1,{shirt:GREEN})+E(320,346,150,28,BR)+R(312,358,16,54,'#7a5a38',3)+pl8(230,338,30)+pl8(300,334,30)+pl8(370,334,30)+pl8(440,338,30)+bread(430,326,.8)+jar(480,328,.8),
+'s4-6':()=>sky('#f0e5c7')+gnd(394,'#d8c69c')+R(60,84,300,180,'#f2ead4',6)+P('M 48 84 L 210 20 L 372 84 Z','#b0705a')+windowIn(120,130,70,60,'#dcead8')+person(140,414,.9,{dress:1,shirt:RED,long:1})+person(210,410,1,{shirt:GREEN,hair:'#3a2c1e'})+boy(300,414,.55)+person(352,412,.66,{dress:1,shirt:BLUE,long:1})+ht(250,300,1.7)+ht(300,270,1.2)+ht(346,306,1.4)+ht(200,310,1)+ht(396,286,.9),
+'s5-0':()=>sky('#dfe3e8')+sn(40)+gnd(330,'#eef0ea')+gnd(396,'#e2e6de')+house(70,336,150,110,'#e6dcc2','#8a94a8')+P('M 54 226 L 145 180 L 236 226 L 236 234 L 54 234 Z','#f4f6f2')+house(300,340,140,100,'#d8c9a0','#7d8a63')+P('M 284 240 L 370 194 L 456 240 L 456 248 L 284 248 Z','#f4f6f2')+tree(540,352,1,'#dfe3e8','#d8dce2')+boy(240,414,.8,RED)+boy(286,416,.72,GREEN),
+'s5-1':()=>sky('#dfe3e8')+sn(36)+gnd(340,'#eef0ea')+gnd(396,'#e2e6de')+tree(70,352,1,'#dfe3e8','#d8dce2')+tree(580,356,.9,'#dfe3e8','#d8dce2')+swm(320,400,1.1)+boy(220,414,.85,RED)+person(430,416,.78,{dress:1,shirt:'#c96f4a',long:1,hair:'#8a6a45'}),
+'s5-2':()=>sky('#dee6d3')+sun(84,86,24)+cloud(320,78)+hillP(180,336,340,50,'#b9c49a')+gnd(340,'#aebd8a')+tree(120,352,1.05)+C(300,320,8,'#c96a4e')+C(320,310,8,RED)+C(340,320,8,'#c96a4e')+L(320,328,320,352,LG,3)+brd(420,150,1.2)+brd(470,180,1)+brd(380,200,.9,BLUE)+C(540,300,7,'#e8c95e')+L(540,308,540,330,LG,3)+girl(240,416,.8),
+'s5-3':()=>sky('#e3e6e0')+rn(34)+rb(320,300,150)+gnd(340,'#aebd8a')+E(470,380,120,26,'#7f9fae')+duckF(430,372,1.1)+duckF(490,376,.9)+C(200,330,8,LG)+C(224,338,7,'#8fae76')+tree(90,352)+girl(240,416,.8),
+'s5-4':()=>sky('#f0e5c7')+sun(560,80,26)+cloud(200,72)+wv(330,'#7f9fae')+C(240,360,14,SKIN)+C(300,366,12,SKIN)+Pc('M 226 356 q 14 -14 28 0 M 288 362 q 12 -12 24 0','#4a3423',4)+E(80,420,40,12,GOLD)+E(80,408,40,10,'#f6d78a')+L(80,398,80,384,'#8a6a45',4)+um(160,400,.9,BLUE)+boy(400,430,.6)+bll(540,436,14,RED),
+'s5-5':()=>sky('#e9e2c8')+cloud(300,70)+gnd(340,'#c9b183')+tree(120,352,1.05,'#e0b45c','#d89a4a')+tree(540,356,1,'#c96f4a','#e0b45c')+lf(260,240,'#e0b45c')+lf(320,280,'#c96f4a')+lf(420,230,'#d89a4a')+lf(200,300,'#c96f4a')+lf(480,300,'#e0b45c')+Pc('M 150 200 q 30 10 60 0 M 380 250 q 30 10 60 0','#c9b183',3,.7)+boy(320,416,.85),
+'s5-6':()=>sky('#f0ead8')+R(20,60,140,340,'#dfe3e8',6)+R(173,60,140,340,'#dee6d3',6)+R(326,60,140,340,'#f0e5c7',6)+R(479,60,140,340,'#e9e2c8',6)+R(20,340,140,60,'#eef0ea')+R(173,340,140,60,'#b9c49a')+R(326,340,140,60,'#c9b183')+R(479,340,140,60,'#d8c69c')+tree(90,330,.75,'#dfe3e8','#d8dce2')+tree(243,330,.75,LG,'#e8b4c8')+sun(396,120,14)+tree(396,330,.75)+tree(549,330,.75,'#e0b45c','#c96f4a')+lf(549,240,'#c96f4a')+tx(90,425,'ЗИМА',20,'#8a8577')+tx(243,425,'ПРОЛЕТ',18,'#8a8577')+tx(396,425,'ЛЯТО',20,'#8a8577')+tx(549,425,'ЕСЕН',20,'#8a8577'),
+'s6-0':()=>sky('#efe3c4')+gnd(392,'#d8c69c')+windowIn(70,96,150,150,'#dcead8',sun(145,150,15))+R(250,300,150,80,BR,6)+R(238,290,174,12,'#a9895c',4)+L(280,300,280,380,'#7a5a38',4)+L(370,300,370,380,'#7a5a38',4)+R(280,314,90,26,'#8a6a45',4)+R(460,320,80,60,'#7d94a4',6)+L(460,350,540,350,'#5d7d92',3)+girl(180,410,.9,BLUE)+R(180,330,26,32,GOLD,4),
+'s6-1':()=>sky('#e9e2c8')+gnd(352,'#b0a689')+R(60,150,300,202,'#d8c9a0')+P('M 48 150 L 210 96 L 372 150 Z','#b0705a')+windowIn(120,200,60,60,'#dcead8')+windowIn(240,200,60,60,'#dcead8')+R(150,290,90,62,'#7a5a38',4)+clk(320,190,26)+R(400,150,180,120,'#cbbd97')+R(420,240,140,30,'#8a7350',3)+tx(490,263,'ВАРНА',20,'#f2ead4')+girl(150,412,.9,BLUE)+person(210,412,1,{shirt:GREEN,hair:'#3a2c1e'})+boy(260,414,.6)+R(300,380,120,10,BR,4)+L(310,390,310,414,'#7a5a38',4)+L(410,390,410,414,'#7a5a38',4),
+'s6-2':()=>sky('#efe9d2')+R(40,80,240,160,'#a9895c',8)+R(56,96,208,128,'#dcead8')+L(160,96,160,224,'#a9895c',4)+Pc('M 70 200 q 20 -16 40 0 M 120 190 q 20 -16 40 0',LG,3)+C(230,150,20,'#e8c95e')+R(320,120,270,250,'#7d94a4',8)+R(340,150,100,90,'#5d7d92',6)+R(470,150,100,90,'#5d7d92',6)+R(340,330,240,40,'#9a7a4e',6)+personT(390,316,1,{shirt:GREEN})+personT(470,316,.9,{dress:1,shirt:BLUE,long:1})+personT(540,320,.55,{shirt:GOLD}),
+'s6-3':()=>sky('#dfe6da')+R(30,60,580,240,'#a9895c',10)+R(50,80,540,200,'#dcead8')+sun(120,140,18)+hillP(300,240,300,36,'#b9c49a')+gnd(240,'#aebd8a')+cowF(200,268,1)+cowF(280,276,.9)+tree(520,240,.7)+R(30,320,580,110,'#9a7a4e',8)+personT(200,436,.95,{dress:1,shirt:BLUE,long:1})+R(260,360,90,60,'#f2ead4',4)+P('M 275 405 Q 305 375 335 405 Z',LG),
+'s6-4':()=>sky('#f0e5c7')+sun(80,84,22)+gnd(300,'#c9b183')+R(40,170,110,130,'#d8c9a0')+P('M 28 170 L 95 128 L 162 170 Z','#b0705a')+R(180,190,90,110,'#cbbd97')+P('M 168 190 L 225 152 L 282 190 Z','#8a7350')+wv(360,'#7f9fae')+shp(180,392,1.2)+brd(420,140,1.1)+brd(470,170,1)+girl(560,420,.9,BLUE),
+'s6-5':()=>sky('#f0e5c7')+sun(560,80,24)+gnd(330,'#e6d3a0')+wv(330,'#7f9fae')+um(140,410,1,RED)+castF(240,432,1)+bll(340,436,15,BLUE)+C(500,414,12,SKIN)+Pc('M 486 420 q 14 -12 28 0','#4a3423',4)+cup(560,436,1),
+'s6-6':()=>sky('#e8a05a')+star4(80,100,5,'#f2ead4')+star4(140,60,4,'#f2ead4')+wv(360,'#c96f4a')+C(320,330,40,'#f6d78a')+shp(160,384,1.1)+brd(420,160,1.1,'#5a3a28')+brd(470,190,1,'#5a3a28'),
+'s7-0':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+windowIn(430,88,160,170,'#dcead8',sun(510,150,15))+R(80,120,90,70,'#a9895c',4)+P('M 84 190 Q 125 158 166 190 Z',LG)+E(250,340,110,22,BR)+R(242,352,15,56,'#7a5a38',3)+personT(190,340,1,{dress:1,shirt:RED,long:1,hair:'#6b5636'})+personT(310,340,.9,{shirt:GREEN})+personT(380,344,.7,{dress:1,shirt:GOLD,long:1})+cup(230,328)+cup(280,328),
+'s7-1':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+R(70,110,200,150,'#8a6a45',6)+tx(170,180,'МЕНЮ',30)+Pc('M 100 210 h 140 M 110 232 h 120','#c9b183',3)+person(360,410,1,{shirt:'#6b7a4a',arm:'fwd'})+R(420,340,80,110,'#f4ecd6',4)+Pc('M 434 364 h 52 M 434 384 h 52 M 434 404 h 40','#b9ad90',3)+personT(520,410,.9,{dress:1,shirt:RED,long:1,hair:'#6b5636'})+personT(580,412,1,{shirt:GREEN}),
+'s7-2':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+windowIn(60,90,140,140,'#dcead8')+E(320,350,170,30,BR)+R(312,362,16,52,'#7a5a38',3)+pl8(240,344,34)+pl8(400,344,34)+personT(180,352,1,{shirt:'#6b7a4a',arm:'fwd'})+C(150,300,3,INK)+C(160,290,3,INK)+C(172,283,3,INK)+personT(300,350,1,{dress:1,shirt:RED,long:1,hair:'#6b5636'})+personT(420,352,.95,{shirt:GREEN})+personT(500,354,.7,{dress:1,shirt:GOLD,long:1}),
+'s7-3':()=>sky('#f0e5c7')+gnd(396,'#d8c69c')+tableF(120,316,400,24)+saladBowl(200,306)+E(330,308,54,12,'#f2ead4')+E(330,306,44,9,'#fbf6e9')+fsh(330,300,1.2)+E(368,292,9,5,'#e8c95e')+pl8(460,310,36)+E(460,304,22,9,'#d8a75a')+E(460,296,16,7,'#e8c887')+cup(150,300,1.1)+cup(520,306,1),
+'s7-4':()=>sky('#f0e5c7')+gnd(396,'#d8c69c')+tableF(120,316,400,24)+ck(300,300,.8,4,false)+P('M 150 316 l 12 -30 l 12 30 Z','#e0b45c')+C(162,280,11,'#f2dcab')+C(155,274,9,'#f6d78a')+P('M 420 316 l 12 -30 l 12 30 Z','#e0b45c')+C(432,280,11,'#f2dcab')+E(360,300,30,10,'#f6d78a')+cup(540,306,1),
+'s7-5':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+E(320,350,160,28,BR)+R(312,362,16,52,'#7a5a38',3)+R(290,330,60,26,'#f4ecd6',3)+Pc('M 298 340 h 44 M 298 348 h 36','#b9ad90',2.5)+personT(160,352,1,{shirt:'#6b7a4a',arm:'fwd'})+R(210,336,34,22,'#c9d6e2',3)+personT(320,352,1,{shirt:GREEN,hair:'#3a2c1e'})+C(430,338,7,GOLD)+C(448,344,7,GOLD)+C(440,330,7,GOLD)+personT(520,354,.7,{dress:1,shirt:GOLD,long:1}),
+'s7-6':()=>sky('#20283a')+star4(120,90,5,'#e8d9a0')+star4(220,60,4,'#e8d9a0')+star4(520,110,5,'#e8d9a0')+mn(430,100,26)+gnd(360,'#2c3446')+carF(320,400,220,'#5d7d92')+C(270,372,11,SKIN)+C(300,372,10,SKIN)+L(40,440,600,440,'#3a4356',6)+C(90,428,5,'#e8d9a0')+C(560,428,5,'#e8d9a0'),
+'s8-0':()=>sky('#efe3c4')+gnd(396,'#d8c69c')+bl(120,140,1.1,RED)+bl(200,110,1,GOLD)+bl(280,150,1.1,BLUE)+bl(560,130,1.1,GREEN)+bl(500,100,1,'#c96f4a')+tableF(200,310,260,22)+ck(330,296,.85,7,false)+jar(430,308,.9)+girl(180,416,.8)+granny(260,414,1),
+'s8-1':()=>sky('#f0e5c7')+gnd(396,'#d8c69c')+tableF(160,330,320,24)+ck(320,314,1.05,7,true)+girl(150,434,.85)+star4(500,120,7,'#e8c95e')+star4(560,180,5,'#e8c95e')+star4(90,140,5,'#e8c95e')+tx(540,320,'7',56,'#a8432a'),
+'s8-2':()=>sky('#efe4c6')+gnd(398,'#d8c69c')+house(320,360,240,140,'#e0cf9e',RED)+R(390,300,60,60,'#7a5a38',4)+bl(120,150,1,RED)+bl(180,120,1.1,GOLD)+gf(560,420,44,40,GOLD,RED)+C(500,380,13,'#c14a2e')+L(500,392,500,408,LG,3)+boy(160,424,.7,BLUE)+girl(220,424,.66,'#c96f4a')+girl(430,430,.75),
+'s8-3':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+rug(320,420,170,'#c9a563')+person(220,410,.8,{shirt:GOLD,arms:'open'})+person(300,414,.72,{dress:1,shirt:'#c96f4a',long:1})+person(390,410,.8,{shirt:BLUE,arms:'open'})+person(460,414,.7,{dress:1,shirt:GOLD,long:1})+noteF(140,150)+noteF(180,190)+noteF(500,150)+bl(90,110,.8,BLUE)+bl(560,110,.8,RED),
+'s8-4':()=>sky('#f0e5c7')+gnd(396,'#d8c69c')+tableF(180,330,280,24)+ck(320,316,.95,7,true)+personT(200,352,.85,{dress:1,shirt:RED,long:1,hair:'#6b5636'})+boy(280,356,.6)+person(360,356,.62,{dress:1,shirt:'#c96f4a',long:1})+boy(430,356,.62,BLUE)+personT(500,352,.9,{shirt:GREEN})+noteF(120,180)+noteF(540,170),
+'s8-5':()=>sky('#efe4c6')+gnd(396,'#d8c69c')+gf(150,420,60,54,RED,GOLD)+gf(230,420,54,48,GOLD,BLUE)+R(320,372,84,48,'#7d94a4',4)+E(362,372,42,10,'#5d7d92')+bll(362,352,17,RED)+gf(480,420,58,52,GREEN,CREAM)+girl(580,424,.85)+boy(240,430,.8,BLUE)+bl(120,140,.9,BLUE)+bl(540,130,.9,GOLD),
+'s8-6':()=>sky('#c98a6a')+C(320,140,30,'#f2d5a0')+gnd(360,'#a97e5c')+house(300,350,240,150,'#e0cf9e',RED)+R(380,296,56,54,'#7a5a38',4)+bl(140,160,.9,GOLD)+bl(520,150,.9,RED)+girl(240,400,.8)+person(420,402,.72,{shirt:BLUE,arm:'fwd'})+person(480,404,.68,{dress:1,shirt:'#c96f4a',long:1})+Pc('M 200 380 q 8 -10 16 0 M 224 372 q 8 -10 16 0','#7a5a38',3),
+'s9-0':()=>sky('#d8cfc0')+gnd(392,'#c9bfae')+windowIn(70,90,200,190,'#aebdc6',rn(16,.6))+R(300,120,120,150,'#efe6d0',6)+Pc('M 320 160 q 10 16 0 32 M 360 190 q 10 16 0 32','#b9ad90',3)+bedF(430,364,180,'#7d94a4','#5a4030',true)+clk(560,140,24),
+'s9-1':()=>sky('#e3e6e0')+gnd(398,'#c9bfae')+L(150,110,150,180,'#6b5636',5)+P('M 108 180 L 150 112 L 192 180 L 178 250 L 122 250 Z',GOLD)+C(150,104,10,'#6b5636')+bts(260,392)+um(420,300,1.1,BLUE)+R(540,330,50,60,RED,4)+C(565,318,10,'#6b5636'),
+'s9-2':()=>sky('#a9b4bd')+rn(40,.55)+gnd(340,'#8f8a76')+E(200,400,70,14,'#5d7d92')+E(430,420,90,17,'#5d7d92')+splashF(200,388)+person(200,380,.7,{shirt:GOLD})+person(340,396,.95,{dress:1,shirt:RED,long:1,hair:'#6b5636'})+um(340,300,1,GOLD),
+'s9-3':()=>sky('#efe6d0')+gnd(394,'#c9bfae')+windowIn(60,90,150,140,'#aebdc6',rn(10,.5))+person(320,420,.95,{shirt:GOLD,arms:'open'})+Pc('M 290 330 q -20 -8 -28 -22 M 296 322 q -24 -2 -36 -14','#b9ad90',3)+R(400,360,40,26,'#f4ecd6',4)+Pc('M 408 366 q 12 -10 24 0','#b9ad90',2.5)+R(480,330,70,60,'#c9d6e2',5),
+'s9-4':()=>sky('#e3e6e0')+gnd(394,'#c9bfae')+bedF(200,380,220,'#7d94a4','#5a4030',true)+person(540,400,1,{shirt:'#f4f0e6',long:1,hair:'#8a8577',arm:'fwd'})+bagF(600,420)+cr(600,408,7,'#f2ead4')+R(60,120,120,90,'#c9d6e2',5)+Pc('M 80 150 q 14 -12 28 0 M 120 170 q 14 -12 28 0','#9aa5a8',3),
+'s9-5':()=>sky('#efe6d0')+gnd(394,'#c9bfae')+tableF(380,330,180,20)+cup(430,318,1)+jar(500,318,.8)+person(200,420,1,{shirt:'#f4f0e6',long:1,hair:'#8a8577',arm:'fwd'})+personSit(320,430,.9,{shirt:GOLD})+Pc('M 250 340 q 20 -14 40 0 M 260 360 q 16 -10 32 0','#b9ad90',3),
+'s9-6':()=>sky('#dee6d3')+sun(80,84,20)+gnd(394,'#c9bfae')+windowIn(60,100,170,160,'#dcead8',sun(140,160,14))+bedF(360,380,200,'#b8839a','#5a4030',true)+cup(320,330,1)+bookO(560,300,.6)+catF(240,420,1.1),
+'s10-0':()=>sky('#dee6d3')+sun(84,86,22)+cloud(320,78)+gnd(336,'#b9c49a')+gnd(392,'#aebd8a')+house(440,330,160,120,'#e6dcc2','#b0705a')+cr(520,258,12)+boy(200,414,.85)+bpF(226,386,BLUE)+boy(270,414,.85,RED)+bpF(296,386,GREEN)+L(120,392,560,392,'#c9b183',5),
+'s10-1':()=>sky('#efe9d2')+gnd(360,'#c9b183')+bd(320,120,320,150)+tx(320,210,'Б',60,'#e8e2cf')+personT(200,300,1,{shirt:GREEN,hair:'#3a2c1e'})+dk(430,420)+dk(550,420)+personSit(430,400,.55,{shirt:RED})+personSit(550,400,.55,{shirt:BLUE}),
+'s10-2':()=>sky('#efe9d2')+gnd(360,'#c9b183')+bd(320,120,320,150)+tx(320,200,'12 + 4',52,'#e8e2cf')+personT(180,300,1,{shirt:GREEN,hair:'#3a2c1e',arm:'fwd'})+boy(420,430,.6,GOLD)+L(452,360,470,320,'#4a3a2a',7)+C(470,318,6,SKIN)+dk(520,430),
+'s10-3':()=>sky('#dee6d3')+sun(560,80,20)+gnd(330,'#aebd8a')+gnd(396,'#b9c49a')+person(180,420,.8,{shirt:RED})+bll(240,428,16,CREAM)+Pc('M 300 420 q 40 -60 80 0',INK,3)+person(340,430,.7,{dress:1,shirt:BLUE,long:1})+person(390,426,.7,{dress:1,shirt:'#c96f4a',long:1})+boy(500,420,.75,GREEN)+bll(540,432,14,'#e8c95e'),
+'s10-4':()=>sky('#efe9d2')+gnd(360,'#c9b183')+personT(200,330,1,{shirt:GREEN,hair:'#3a2c1e'})+bookO(200,290,1)+R(380,300,90,70,'#c9d6e2',5)+E(400,352,20,13,'#8a94a8')+C(416,336,11,'#8a94a8')+P('M 410 326 l 4 -10 l 7 7 Z','#8a94a8')+R(500,320,70,56,'#f4ecd6',5)+C(520,344,13,'#f2ead4')+E(514,360,16,10,'#f2ead4')+P('M 528 330 l 8 -12 l 6 14 Z','#f2ead4')+C(516,342,1.6,INK),
+'s10-5':()=>sky('#f0e5c7')+gnd(396,'#d8c69c')+tableF(120,320,400,22)+R(170,270,90,60,'#f4ecd6',3)+sun(200,290,10)+P('M 190 320 L 205 296 L 220 320 Z','#b0705a')+R(300,270,90,60,'#f4ecd6',3)+Pc('M 320 300 q 20 -18 40 0','#7f9fae',3)+shp(345,312,.6)+girl(560,424,.8)+boy(500,426,.8,RED),
+'s10-6':()=>sky('#f0e5c7')+sun(76,80,22)+gnd(336,'#b9c49a')+gnd(392,'#aebd8a')+R(140,170,360,180,'#f2ead4',6)+P('M 124 170 L 320 100 L 516 170 Z','#b0705a')+windowIn(180,210,60,54,'#dcead8')+windowIn(280,210,60,54,'#dcead8')+windowIn(380,210,60,54,'#dcead8')+R(280,260,80,90,'#7a5a38',4)+cr(430,200,13)+boy(140,418,.85)+bll(190,432,15,CREAM)+boy(240,418,.85,RED)+Pc('M 60 430 q 20 -14 40 0 M 560 434 q 20 -14 40 0',LG,3)};
+
+const EMBLEM=(c='#f2ead2')=>`<svg viewBox="0 0 200 150" fill="none"><circle cx="100" cy="52" r="24" stroke="${c}" stroke-width="3"/><line x1="100" y1="12" x2="100" y2="24" stroke="${c}" stroke-width="3" stroke-linecap="round"/><line x1="66" y1="22" x2="74" y2="32" stroke="${c}" stroke-width="3" stroke-linecap="round"/><line x1="134" y1="22" x2="126" y2="32" stroke="${c}" stroke-width="3" stroke-linecap="round"/><line x1="56" y1="52" x2="68" y2="52" stroke="${c}" stroke-width="3" stroke-linecap="round"/><line x1="132" y1="52" x2="144" y2="52" stroke="${c}" stroke-width="3" stroke-linecap="round"/><path d="M 40 92 C 60 80 84 82 100 94 C 116 82 140 80 160 92 L 160 124 C 140 112 116 114 100 126 C 84 114 60 112 40 124 Z" stroke="${c}" stroke-width="3.5" fill="none" stroke-linejoin="round"/><line x1="100" y1="94" x2="100" y2="126" stroke="${c}" stroke-width="3"/></svg>`;
+
+/* ═══ DURUM ═══ */
+const $=s=>document.querySelector(s);
+const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+let state={view:'library',story:null,page:0};
+let saved={},prog={},showTr=false,turnBusy=false;
+try{saved=JSON.parse(localStorage.getItem('pb.words')||'{}')}catch(e){}
+try{prog=JSON.parse(localStorage.getItem('pb.prog')||'{}')}catch(e){}
+try{showTr=localStorage.getItem('pb.tr')==='1'}catch(e){}
+let wordFilter='all',wordQuery='',quiz=null;
+const save=()=>{try{localStorage.setItem('pb.words',JSON.stringify(saved));localStorage.setItem('pb.prog',JSON.stringify(prog));localStorage.setItem('pb.tr',showTr?'1':'0')}catch(e){}};
+STORIES.forEach(s=>s.scenes.forEach(c=>c.lines=c.l.split(';').map(p=>p.split('|'))));
+
+function lineHTML(bg){
+  const raw=bg.split(/(\s+)/);
+  const T=raw.map(t=>{
+    if(t===''||/^\s+$/.test(t))return{type:'ws',t};
+    const m=t.match(/^([^\p{L}]*)([\p{L}][\p{L}'’-]*)([\s\S]*)$/u);
+    if(m&&m[2]&&/[\u0400-\u04FF]/.test(m[2]))return{type:'w',pre:m[1],w:m[2],post:m[3],norm:m[2].toLowerCase()};
+    return{type:'p',t};
+  });
+  let out='',i=0;
+  while(i<T.length){const t=T[i];
+    if(t.type==='w'){
+      let k=t.norm,txt=t.pre+t.w+t.post,adv=1;
+      if(T[i+1]&&T[i+1].type==='ws'&&T[i+2]&&T[i+2].type==='w'){
+        const k2=t.norm+' '+T[i+2].norm;
+        if(D[k2]){k=k2;txt=t.pre+t.w+T[i+1].t+T[i+2].w+T[i+2].post;adv=3}
+      }
+      out+=D[k]?`<button class="w" data-k="${k}">${esc(txt)}</button>`:esc(txt);
+      i+=adv;continue;
+    }
+    out+=esc(t.t);i++;
+  }
+  return out;
+}
+const icoTr=`<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h11M9.5 4v3M12.5 7c-1 5-4.5 8.5-8.5 10M7 12.5c1.5 3 4 5.5 7 6.5"/><path d="M14 20l4-9 4 9M15.3 17h5.4"/></svg>`;
+const icoL=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>`;
+const icoR=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>`;
+const icoEye=`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>`;
+const icoBack=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>`;
+
+function renderTop(v){document.querySelectorAll('#top nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v))}
+function renderLibrary(){
+  state.view='library';renderTop('library');
+  const rows=STORIES.map((s,i)=>{
+    const p=Math.min(prog[s.id]||0,8),dots=Array.from({length:8},(_,j)=>`<i class="${j<p?'on':''}"></i>`).join('');
+    return `<article class="toc-row" data-s="${s.id}"><div class="num">${String(i+1).padStart(2,'0')}</div><div><h3>${s.bg}</h3><div class="ttr">${s.tr}</div><div class="tags">${s.tags}</div></div><div class="toc-side"><div class="dots">${dots}</div><small>${p}/8 sayfa</small></div></article>`}).join('');
+  $('#view').innerHTML=`<section class="lib"><aside class="cover"><div class="kick">БЪЛГАРСКИ РАЗКАЗИ · A1</div><h1>ПЪРВИ<br>СТЪПКИ</h1><div class="sub">İLK ADIMLAR</div><div class="rule"><i></i></div>${EMBLEM()}<p>Türkçe bilenler için hikâyeli Bulgarca. Günlük hayatta en çok ihtiyaç duyulan kelimeler, tekrar tekrar karşılaşacağın sahnelerle.</p><div class="foot">КНИГА I · 10 РАЗКАЗА · 490 ИЗРЕЧЕНИЯ</div></aside><div class="sheet toc"><h2>Съдържание</h2><div class="htr">İçindekiler</div><p class="lede">Her hikâye bağımsızdır ve kendi kelime dünyasını öğretir. Okurken bir kelimeye tıkla — anlamı sayfanın dibindeki dipnota düşer ve kelime defterine kendiliğinden yazılır.</p>${rows}<div class="toc-note">Ok tuşlarıyla sayfa çevirebilirsin · Sağ üstteki düğmeyle tüm cümle çevirilerini açıp kapatabilirsin.</div></div></section>`;
+  document.querySelectorAll('.toc-row').forEach(r=>r.addEventListener('click',()=>openStory(r.dataset.s)));
+}
+function openStory(id){state.story=STORIES.find(s=>s.id===id);state.page=0;renderStory()}
+function pageHTML(s,p){
+  const pages=s.scenes.length+1;
+  if(p===pages-1){
+    const used=Object.keys(saved).length;
+    const idx=STORIES.indexOf(s),next=STORIES[idx+1];
+    const flist=s.focus.map(k=>`<div class="f-row"><b>${cap(k)}</b><div class="lead"></div><span>${D[k]?D[k][0]:''}</span></div>`).join('');
+    return `<div class="page pl end-pl"><h2>КРАЙ</h2><div class="sub">Son</div><div class="rule" style="width:120px"><i></i></div>${EMBLEM()}<p style="font-size:12px;letter-spacing:.2em;opacity:.65;margin-top:18px">${s.bg.toUpperCase()}</p></div><div class="page pr end-pr"><span class="kick">Hikâye ${idx+1} · Bitti</span><h3 style="margin-top:10px">Браво!</h3><p class="stats">Bu hikâyeyi okudun. Defterinde şimdi ${used} kelime birikti.</p><div class="focus-list">${flist}</div><div class="end-btns"><button class="bn" id="bn-toc">${icoBack} İçindekiler</button>${next?`<button class="bn solid" id="bn-next">Sıradaki: ${next.tr} ${icoR}</button>`:`<button class="bn solid" id="bn-words">Kelime Defteri ${icoR}</button>`}</div></div>`;
+  }
+  const sc=s.scenes[p];
+  return `<div class="page pl"><div class="pf"></div><div class="p-illo"><div class="illo-box"><svg viewBox="0 0 640 460">${ILLO[s.id+'-'+p]()}</svg></div><div class="illo-cap">Сцена ${p+1} · Sahne ${p+1}</div></div></div><div class="page pr"><div class="pf"></div><div class="p-text"><span class="kick">Hikâye ${STORIES.indexOf(s)+1} · Sayfa ${p+1}/${pages}</span>${p===0?`<div class="s-title">${s.bg}</div><div class="s-sub">${s.tr}</div>`:''}<div class="lines">${sc.lines.map(l=>`<p class="line">${lineHTML(l[0])}<button class="trb" title="Çeviriyi göster/gizle">${icoTr}</button><span class="tr">${l[1]}</span></p>`).join('')}</div><div class="fn-area"><span class="fn-label">Дипнот · Dipnot</span></div></div></div>`;
+}
+function renderStory(){
+  state.view='story';renderTop('story');document.body.classList.toggle('trall',showTr);
+  const s=state.story,pages=s.scenes.length+1,p=state.page;
+  $('#view').innerHTML=`<div class="story-top"><button class="back" id="st-back">${icoBack} Съдържание · İçindekiler</button><button class="tr-sw ${showTr?'on':''}" id="tr-sw">${icoEye} Çeviriler ${showTr?'açık':'kapalı'}</button></div><div class="book" id="book">${pageHTML(s,p)}</div><div class="book-nav"><button class="bn" id="bn-prev" ${p===0?'disabled':''}>${icoL} НАЗАД</button><button class="bn ghost" id="bn-toc2">Съдържание</button><button class="bn" id="bn-next2" ${p===pages-1?'disabled':''}>НАПРЕД ${icoR}</button></div><div class="hint">← → ok tuşlarıyla da çevirebilirsin · kelimelere tıkla</div>`;
+  $('#st-back').onclick=renderLibrary;
+  $('#bn-toc2').onclick=renderLibrary;
+  $('#tr-sw').onclick=()=>{showTr=!showTr;save();document.body.classList.toggle('trall',showTr);const b=$('#tr-sw');b.classList.toggle('on',showTr);b.innerHTML=`${icoEye} Çeviriler ${showTr?'açık':'kapalı'}`};
+  $('#bn-prev').onclick=()=>turn(-1);
+  $('#bn-next2').onclick=()=>turn(1);
+  bindPage();
+}
+function turn(dir){
+  if(turnBusy)return;
+  const s=state.story,pages=s.scenes.length+1,np=state.page+dir;
+  if(np<0||np>=pages)return;
+  turnBusy=true;
+  const book=$('#book');
+  book.classList.add('leaf-out');
+  prog[s.id]=Math.max(prog[s.id]||0,np+1);save();
+  setTimeout(()=>{
+    state.page=np;
+    book.innerHTML=pageHTML(s,np);
+    book.classList.remove('leaf-out');book.classList.add('leaf-in');
+    $('#bn-prev').disabled=np===0;$('#bn-next2').disabled=np===pages-1;
+    bindPage();
+    setTimeout(()=>{book.classList.remove('leaf-in');turnBusy=false},380);
+  },290);
+}
+function bindPage(){
+  const s=state.story;
+  document.querySelectorAll('#book .trb').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();b.closest('.line').classList.toggle('open')}));
+  document.querySelectorAll('#book .w').forEach(w=>w.addEventListener('click',()=>{
+    const k=w.dataset.k,v=D[k];if(!v)return;
+    const area=$('#book .fn-area');if(!area)return;
+    area.querySelectorAll('.fn').forEach(n=>n.classList.remove('new'));
+    const isNew=!saved[k];
+    saved[k]=saved[k]||{n:0};saved[k].n++;saved[k].t=Date.now();save();
+    const chip=document.createElement('span');chip.className='fn new';
+    chip.innerHTML=`<b>${esc(cap(k))}</b><em>${esc(v[0])}</em><span class="add">${isNew?'yeni · deftere eklendi':'tekrar ×'+saved[k].n}</span>`;
+    area.appendChild(chip);
+    w.classList.add('hit');setTimeout(()=>w.classList.remove('hit'),900);
+  }));
+  const bt=$('#bn-toc');if(bt)bt.onclick=renderLibrary;
+  const bn=$('#bn-next');if(bn)bn.onclick=()=>openStory(STORIES[STORIES.indexOf(s)+1].id);
+  const bw=$('#bn-words');if(bw)bw.onclick=renderWords;
+}
+function renderWords(){
+  state.view='words';renderTop('words');
+  const nBook=Object.keys(saved).filter(k=>D[k]).length;
+  const cats=[...new Set(Object.keys(saved).filter(k=>D[k]).map(k=>D[k][1]))];
+  if(wordFilter!=='all'&&!cats.includes(wordFilter))wordFilter='all';
+  $('#view').innerHTML=`<section class="sheet words"><h2>Речник</h2><div class="cnt">Kelime Defteri · <b id="w-count">${nBook}</b> kelime</div><p class="lede">Hikâyeleri okurken tıkladığın her kelime burada birikir. En son tıkladıkların üstte görünür.</p><div class="w-tools"><input class="search" id="w-search" placeholder="Ara: bulgarca ya da türkçe…" value="${esc(wordQuery)}"><div class="chips" id="w-chips"><button class="chip ${wordFilter==='all'?'on':''}" data-c="all">tümü</button>${cats.map(c=>`<button class="chip ${wordFilter===c?'on':''}" data-c="${c}">${CATS[c]||c}</button>`).join('')}</div><button class="bn solid" id="w-quiz" ${nBook<4?'disabled':''}>Alıştırma ${icoR}</button></div><div class="w-list" id="w-list"></div></section>`;
+  $('#w-search').addEventListener('input',e=>{wordQuery=e.target.value;wordsRefresh()});
+  document.querySelectorAll('#w-chips .chip').forEach(ch=>ch.addEventListener('click',()=>{wordFilter=ch.dataset.c;document.querySelectorAll('#w-chips .chip').forEach(x=>x.classList.toggle('on',x.dataset.c===wordFilter));wordsRefresh()}));
+  $('#w-quiz').onclick=()=>{buildQuiz(Object.keys(saved).filter(k=>D[k]),'book');renderQuiz()};
+  wordsRefresh();
+}
+function wordsRefresh(){
+  const list=$('#w-list');if(!list)return;
+  let keys=Object.keys(saved).filter(k=>D[k]);
+  const total=keys.length;
+  if(wordFilter!=='all')keys=keys.filter(k=>D[k][1]===wordFilter);
+  if(wordQuery){const q=wordQuery.toLowerCase();keys=keys.filter(k=>k.includes(q)||D[k][0].toLowerCase().includes(q))}
+  keys.sort((a,b)=>(saved[b].t||0)-(saved[a].t||0));
+  const cnt=$('#w-count');if(cnt)cnt.textContent=total;
+  if(!total){list.innerHTML=`<div class="empty">Defterin henüz boş.<br>Hikâyeleri aç ve kelimelere tıkla — gördüğün her kelime buraya düşecek.</div>`;return}
+  if(!keys.length){list.innerHTML=`<div class="empty">Bu süzgeçte kelime yok.</div>`;return}
+  list.innerHTML=keys.map(k=>`<div class="w-row"><span class="bg">${esc(cap(k))}</span><div class="lead"></div><span class="trm">${esc(D[k][0])}</span><span class="cat">${CATS[D[k][1]]||D[k][1]}</span><button class="del" data-k="${k}" title="Defterden çıkar">×</button></div>`).join('');
+  list.querySelectorAll('.del').forEach(d=>d.addEventListener('click',()=>{delete saved[d.dataset.k];save();wordsRefresh()}));
+}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function buildQuiz(pool,source){
+  const words=shuffle(pool.filter(k=>D[k]).slice());
+  const opts=[],correct=[];
+  const meanings=[...new Set(Object.keys(D).filter(k=>D[k][1]!=='öz').map(k=>D[k][0]))];
+  words.forEach(k=>{const m=D[k][0];const pick=shuffle(meanings.filter(x=>x!==m)).slice(0,3);const four=shuffle([m,...pick]);opts.push(four);correct.push(four.indexOf(m))});
+  quiz={pool:words,opts,correct,i:0,score:0,answered:false,done:false,source};
+}
+function renderQuiz(){
+  state.view='quiz';renderTop('quiz');
+  const nBook=Object.keys(saved).filter(k=>D[k]).length;
+  if(!quiz){
+    $('#view').innerHTML=`<div class="q-wrap"><div class="sheet q-card"><span class="kick">Тест · Alıştırma</span><div class="s-title" style="margin-top:12px">Kelimelerini yokla</div><p class="q-msg">Dörtlü seçmeli sorular: Bulgarca kelimeyi okur, doğru Türkçe anlamı seçersin.<br>Klavyeden 1–4 tuşlarıyla da cevap verebilirsin.</p><div class="end-btns" style="justify-content:center"><button class="bn solid" id="q-book" ${nBook<4?'disabled':''}>Defterim (${nBook})</button><button class="bn" id="q-all">Tüm sözlük</button></div></div></div>`;
+    $('#q-book').onclick=()=>{buildQuiz(Object.keys(saved).filter(k=>D[k]),'book');renderQuiz()};
+    $('#q-all').onclick=()=>{buildQuiz(Object.keys(D).filter(k=>D[k][1]!=='öz'),'all');renderQuiz()};
+    return;
+  }
+  if(quiz.done){
+    const pct=Math.round(quiz.score/quiz.pool.length*100);
+    const msg=pct===100?'Много добре! Kusursuz.':pct>=70?'Добра работа! Sağlam bilgi.':'Не е лошо! Hikâyede tekrar karşılaşacaksın.';
+    $('#view').innerHTML=`<div class="q-wrap"><div class="sheet q-card"><span class="kick">Тест · Bitti</span><div class="q-score">${quiz.score}<span> / ${quiz.pool.length}</span></div><p class="q-msg">${msg}</p><div class="end-btns" style="justify-content:center"><button class="bn" id="q-home">${icoBack} İçindekiler</button><button class="bn solid" id="q-again">Tekrar ${icoR}</button></div></div></div>`;
+    $('#q-home').onclick=renderLibrary;
+    $('#q-again').onclick=()=>{if(quiz.source==='book'){const p=Object.keys(saved).filter(k=>D[k]);if(p.length>=4)buildQuiz(p,'book');else quiz=null}else buildQuiz(Object.keys(D).filter(k=>D[k][1]!=='öz'),'all');renderQuiz()};
+    return;
+  }
+  const total=quiz.pool.length,k=quiz.pool[quiz.i],v=D[k],four=quiz.opts[quiz.i];
+  $('#view').innerHTML=`<div class="q-wrap"><div class="sheet q-card"><div class="q-head"><span>Съпрос · Soru ${quiz.i+1}/${total}</span><span>Skor ${quiz.score}</span></div><div class="q-word">${esc(cap(k))}</div><div class="q-cue">Bulgarca ${CATS[v[1]]||'kelime'} — Türkçesi nedir?</div><div class="q-opts">${four.map((o,idx)=>`<button class="q-opt" data-i="${idx}"><span class="q-key">${idx+1}</span>${esc(o)}</button>`).join('')}</div><div class="q-next" id="q-next"></div></div></div>`;
+  document.querySelectorAll('.q-opt').forEach(b=>b.addEventListener('click',()=>answer(+b.dataset.i)));
+}
+function answer(i){
+  if(!quiz||quiz.answered)return;
+  quiz.answered=true;
+  const ci=quiz.correct[quiz.i];
+  document.querySelectorAll('.q-opt').forEach((b,idx)=>{b.disabled=true;if(idx===ci)b.classList.add('ok');else if(idx===i)b.classList.add('bad')});
+  if(i===ci)quiz.score++;
+  const qh=document.querySelector('.q-head span:last-child');if(qh)qh.textContent='Skor '+quiz.score;
+  $('#q-next').innerHTML=`<button class="bn solid" id="q-go">${quiz.i+1<quiz.pool.length?'СЛЕДВАЩ · Sonraki':'КРАЙ · Bitir'} ${icoR}</button>`;
+  $('#q-go').onclick=()=>{quiz.i++;quiz.answered=false;if(quiz.i>=quiz.pool.length)quiz.done=true;renderQuiz()};
+}
+document.querySelectorAll('#top nav button').forEach(b=>b.addEventListener('click',()=>{
+  const v=b.dataset.v;
+  if(v==='library')renderLibrary();else if(v==='words')renderWords();else if(v==='quiz')renderQuiz();
+}));
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT')return;
+  if(state.view==='story'){if(e.key==='ArrowRight')turn(1);else if(e.key==='ArrowLeft')turn(-1)}
+  else if(state.view==='quiz'&&quiz&&!quiz.done){
+    if(!quiz.answered&&['1','2','3','4'].includes(e.key)){const b=document.querySelectorAll('.q-opt')[+e.key-1];if(b)b.click()}
+    else if(quiz.answered&&(e.key==='Enter'||e.key===' ')){const g=$('#q-go');if(g){e.preventDefault();g.click()}}
+  }
+});
+renderLibrary();
+</script>
+</body>
+</html>
